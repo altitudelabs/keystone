@@ -19,4 +19,10 @@
 // ===========
 
 // Add your own site style includes here
-@import "site/layout";
+@import "site/header";
+@import "site/footer";
+
+
+// page specific scss. needs to be refactored out
+@import "site/common";
+@import "site/home";
