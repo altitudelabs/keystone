@@ -17,7 +17,7 @@ module.exports = function() {
   });
   // gulp.watch('client/app/*.css', ['minify-css']);
   // gulp.watch('client/*.html', ['minify-html']);
-  // gulp.watch('dist/*', ['reload']);
+  gulp.watch('templates/**/*.hbs', ['reload']);
 };
 
 
