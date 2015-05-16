@@ -1,4 +1,110 @@
+$footer-logo-url: '../images/footer-logo.png';
+$twitter-logo-url: '../images/footer-twitter.png';
+$linkedin-logo-url: '../images/footer-linkedin.png';
+$facebook-logo-url: '../images/footer-facebook.png';
+
 #footer {
-  height: 100px;
-  color: $gray-light;
+  background: $footer-grey;
+  padding: 55px 0 60px 0;
 }
+
+.footer-logo {
+
+  @include background-contain-image($footer-logo-url);
+  width: 160px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.footer-line-separator {
+  height: 0.15px;
+  background: white;
+  opacity: 0.5;
+  height: 1px;
+  
+  margin: 30px 15% 30px 15%;
+  @media (max-width: $mobile-width) {
+    margin: 5px 15% 5px 15%;
+
+  }
+
+}
+.footer-content {
+  font-size: 12px;
+  margin: 0 17.5% 0 17.5%;
+  text-align: center;
+  @media (max-width: $mobile-width) {
+    font-size: 10px;
+    padding-top: 10px;
+    margin: 0 10px 0 10px;
+  }
+  .copyright {
+    float: left;
+    color: white;
+  }
+
+  .contact,
+  .privacy {
+    color: white;
+    margin: 0 7px 0 7px;
+    @media (max-width: $mobile-width) {
+      margin: 0 2px 0 2px;
+    }
+  }
+
+  .sns {
+    float: right;
+    padding-top: 5px;
+    @media (max-width: $mobile-width) {
+      float: none;
+      margin: auto;
+      padding-top: 5px;
+      padding-bottom: 15px;
+    }
+
+    .icon {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      margin: 0 4px 0 4px;
+    }
+    .twitter {
+      .icon {
+        @include background-contain-image($twitter-logo-url);
+      }
+    }
+    .linkedin {
+      .icon {
+        @include background-contain-image($linkedin-logo-url);
+      } 
+    }
+    .facebook {
+      .icon {
+        @include background-contain-image($facebook-logo-url);
+      }  
+    }
+  }
+}
+/*
+    <div id="footer">
+      <div class="footer-logo"></div>
+      <div class="footer-line-separator"></div>
+      <div class="footer-content">
+        <span class="copyright">© 2015 Keystone. All Rights Reserved</span>
+        <a class="conatct">Contact</a>
+        <div class="sns">
+          <a class="twitter">
+            <div class="icon"></div>
+          </a>
+          <a class="linkedin">
+            <div class="icon"></div>
+          </a>
+          <a class="facebook">
+            <div class="icon"></div>
+          </a>
+        </div>
+      </div>
+      footer
+    </div>*/

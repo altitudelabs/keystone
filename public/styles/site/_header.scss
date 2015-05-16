@@ -1,27 +1,31 @@
-$nav-height: 50px;
+$nav-height: 70px;
+$logo-image-url: '../images/logo@2x.png';
 
 #header {
   height: $nav-height;
 }
 
 .nav-logo {
+  @include background-contain-image($logo-image-url);
   display: inline-block;
-  width: 200px;
-  background: grey;
+  vertical-align: middle;
+  margin-left: 82px;
   height: $nav-height;
+  width: 150px;
 }
 
 .nav-buttons {
   float: right;
   margin: 0;
-  padding: 0 20px 0 0;
+  padding: 0 67px 0 0;
   height: $nav-height;
 }
 
 .nav-button {
+  text-transform: uppercase;
   line-height: $nav-height;
   display: inline-block;
-  padding: 0 15px 0 15px;
+  padding: 4px 14px 0 14px;
 }
 
 

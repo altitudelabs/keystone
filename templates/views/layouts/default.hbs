@@ -6,6 +6,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>keystone</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link href="/bower_components/bootstrap/dist/css/bootstrap.min.css"></link>
+		<link href="/bower_components/dw-bxslider-4/dist/jquery.bxslider.css"></link>
+
 		<link href="/styles/main.css" rel="stylesheet">
 		
 		{{!-- This file provides the default styling for the KeystoneJS Content Editor 
@@ -21,8 +24,9 @@
 		
 	</head>
 	<body>
-		<div id="header">
-			<div class="nav-logo">logo</div>
+		<!-- header start !-->
+		<nav id="header">
+			<div class="nav-logo"></div>
 			<ul class="nav-buttons">
 				<li class="nav-button"><a href="/service">Service</a></li>
 				<li class="nav-button"><a href="/keystory">Keystory</a></li>
@@ -30,42 +34,69 @@
 				<li class="nav-button"><a href="/career">Career</a></li>
 				<li class="nav-button"><a href="/contact">Contact</a></li>
 			</ul>
-		</div>
-		<div id="body">
-			<!--
-				Flash messages allow you to display once-off status messages to users, e.g. form
-				validation errors, success messages, etc
-			-->
-			{{#if messages}}
-			<div id="flash-messages" class="container">
-				{{#if messages.info}}
-				<div class="alert alert-info">
-						{{{flashMessages messages.info}}}
-				</div>
-				{{/if}}
-				{{#if messages.success}}
-				<div class="alert alert-success">
-						{{{flashMessages messages.success}}}
-				</div>
-				{{/if}}
-				{{#if messages.warning}}
-				<div class="alert alert-warning">
-						{{{flashMessages messages.warning}}}
-				</div>
-				{{/if}}
-				{{#if messages.error}}
-				<div class="alert alert-danger">
-						{{{flashMessages messages.error}}}
-				</div>
-				{{/if}}
+		</nav>
+		<!-- header end !-->
+
+		<!--
+			Flash messages allow you to display once-off status messages to users, e.g. form
+			validation errors, success messages, etc
+		-->
+		{{#if messages}}
+		<div id="flash-messages" class="container">
+			{{#if messages.info}}
+			<div class="alert alert-info">
+					{{{flashMessages messages.info}}}
 			</div>
 			{{/if}}
-			<!-- The content block should contain the body of your template's content-->
-			{{{body}}}
+			{{#if messages.success}}
+			<div class="alert alert-success">
+					{{{flashMessages messages.success}}}
+			</div>
+			{{/if}}
+			{{#if messages.warning}}
+			<div class="alert alert-warning">
+					{{{flashMessages messages.warning}}}
+			</div>
+			{{/if}}
+			{{#if messages.error}}
+			<div class="alert alert-danger">
+					{{{flashMessages messages.error}}}
+			</div>
+			{{/if}}
 		</div>
+		{{/if}}
+		<!-- The content block should contain the body of your template's content-->
+		{{{body}}}
+		
+
+
+
 		<div id="footer">
-			footer
+			<div class="footer-logo"></div>
+			<div class="footer-line-separator"></div>
+			<div class="footer-content">
+				<div class="sns">
+					<a href="#" class="twitter">
+						<div class="icon"></div>
+					</a>
+					<a href="#" class="linkedin">
+						<div class="icon"></div>
+					</a>
+					<a href="#" class="facebook">
+						<div class="icon"></div>
+					</a>
+				</div>
+				<span class="copyright">© 2015 Keystone. All Rights Reserved</span>
+				<a href="/contact" class="contact">Contact</a>
+				<a href="#" class="privacy">Privacy</a>
+			</div>
 		</div>
+
+
+
+
+
+
 		{{!--
 			//- jQuery 1.11.1 is included by default, and required by both Bootstrap
 			//- and the KeystoneJS Content Editor. If you are not targeting IE8,
@@ -78,5 +109,17 @@
 		--}}
 		<script src="/js/lib/bootstrap/bootstrap-3.2.0.min.js"></script>
 		{{{isAdminEditorJS user}}}
+
+		
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+		<script src="bower_components/dw-bxslider-4/dist/jquery.bxslider.min.js"></script>
+		<script src="/js/app/app.js"></script>
+
+		<script src="/js/app/home/index.js"></script>
+		<script src="/js/app/home/controller.js"></script>
+		
+		<script src="/js/app/main.js"></script>
+
 	</body>
 </html>

@@ -18,6 +18,7 @@ module.exports = function() {
   // gulp.watch('client/app/*.css', ['minify-css']);
   // gulp.watch('client/*.html', ['minify-html']);
   gulp.watch('templates/**/*.hbs', ['reload']);
+  gulp.watch('public/js/**/*.js', ['reload']);
 };
 
 

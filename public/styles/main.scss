@@ -17,12 +17,18 @@
 
 // Site Styles
 // ===========
+@import "site/common";
 
 // Add your own site style includes here
 @import "site/header";
+@import "site/body";
 @import "site/footer";
 
 
 // page specific scss. needs to be refactored out
-@import "site/common";
 @import "site/home";
+@import "site/keystory";
+@import "site/service";
+@import "site/contact";
+@import "site/about";
+@import "site/career";

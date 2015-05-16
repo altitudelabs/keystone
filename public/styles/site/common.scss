@@ -1,8 +1,79 @@
-@mixin background-cover-image($imgpath, $position: center, $repeat: no-repeat) {
+html {
+  height: 100%;
+  margin: 0;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'HelveticaNeueLTStd';
+  color: #575656;
+  /*font-size: 62.5%;*/
+}
+body {
+  min-height: 100%;
+  height: 1px;
+  margin: 0;
+}
+a {
+  color: $main-grey;
+  &:hover {
+    color: $main-grey;
+  }
+}
+
+@mixin background-cover-image($imgpath, $position: center center, $repeat: no-repeat) {
   background: {
     image: url($imgpath);
     position: $position;
     repeat: $repeat;
     size: cover;
   }
+}
+
+
+@mixin background-contain-image($imgpath, $position: center center, $repeat: no-repeat) {
+  background: {
+    image: url($imgpath);
+    position: $position;
+    repeat: $repeat;
+    size: contain;
+  }
+}
+
+/* font - HelveticaNeueLTStd
+ * --------------------------------------------------------------------------*/
+@font-face {
+  font-family: 'HelveticaNeueLTStd';
+  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Md.otf);
+}
+@font-face {
+  font-family: 'HelveticaNeueLTStd';
+  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-MdIt.otf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd';
+  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd';
+  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-BdIt.otf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd';
+  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Lt.otf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd';
+  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-LtIt.otf);
+  font-weight: lighter;
+  font-style: italic;
 }
