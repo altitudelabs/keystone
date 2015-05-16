@@ -14,13 +14,13 @@ keystone.init({
 
 	'name': 'keystone',
 	'brand': 'keystone',
-	
+
 	'sass': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'hbs',
-	
+
 	'custom engine': handlebars.create({
 		layoutsDir: 'templates/views/layouts',
 		partialsDir: 'templates/views/partials',
@@ -28,15 +28,22 @@ keystone.init({
 		helpers: new require('./templates/views/helpers')(),
 		extname: '.hbs'
 	}).engine,
-	
+
 	'emails': 'templates/emails',
-	
+
 	'auto update': true,
 	'session': true,
 	'auth': true,
 	'user model': 'User',
 	'cookie secret': 'Hn_mdJJTV%L"WiR=BX-ud4N550<01e:t`sT4@$lwP%P^}Fwo+U0"OJo_p}#}>2U-'
 
+});
+
+// Cloudinary
+keystone.set('cloudinary config', {
+  'cloud_name': process.env.CLOUDINARY_CLOUDNAME,
+  'api_key': process.env.CLOUDINARY_APIKEY,
+  'api_secret': process.env.CLOUDINARY_APISECRET
 });
 
 // Load your project's Models
