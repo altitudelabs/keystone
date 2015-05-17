@@ -1,7 +1,38 @@
-// Override Bootstrap variables in this file, e.g.
+/* =Table of Contents
+--------------------------------------------------------------
+  =layout
+  =color
+  =image url
+-------------------------------------------------------------- */
 
+
+/* =layout
+* --------------------------------------------------------------------------*/
+$mobile-width: 600px;
+
+
+/* =color
+* --------------------------------------------------------------------------*/
 $main-grey: #575656;
 $main-red: #B72025;
 $footer-grey: #323232;
 
-$mobile-width: 600px;
+
+/* =image url
+* --------------------------------------------------------------------------*/
+$home-main-url: '../images/service-introduction@2x.png';
+$service-main-url: '../images/service-introduction@2x.png';
+$keystory-main-url: '../images/keystory-introduction@1x.png';
+$career-main-url: '../images/career-introduction@2x.png';
+$about-main-url: '../images/about-introduction@2x.png';
+$bootcamp-main-url: '../images/bootcamp@2x.png';
+$snapshot-main-url: '../images/snapshot@2x.png';
+
+$arrow-down: '../images/call-to-action.png';
+
+$cornerstone-icon: '../images/service-cornerstone@2x.png';
+$bap-icon: '../images/service-boarding-school@2x.png';
+$enrichment-icon: '../images/service-curricular-enrichment@2x.png';
+$milestone-icon: '../images/service-milestone@2x.png';
+$test-icon: '../images/service-test-preparation@2x.png';
+$CAPstone-icon: '../images/service-capstone@2x.png';
