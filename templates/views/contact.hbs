@@ -1,27 +1,125 @@
-<div class="container">
-	<h1>Contact Us</h1>
-</div>
-<div class="container">
+<section class="contact-main">
+  <div class="contact-main-text">
+    <h1 class="title">Contact Us</span>
+    <h2 class="sub">Without Boundaries</span>
+  </div>
+</section>
+
+
+<section class="contact-offices">
+	<div class="office">
+		<div class="title">
+			<div class="title-icon"></div>
+			<span class="title-text">Seoul</span>
+		</div>
+		<div class="detail-container">
+			<div class="address">
+				<span class="title">Swing by</span>
+				<span class="detail">
+					Sujeong Building
+				</span>
+				<span class="detail">
+					Gangnam-gu Sinsa-dong 593-3, Seoul, South Korea
+				</span>
+				<a href="#">
+					<div class="gmap">Google Map</div>
+				</a>
+
+				<div class="phone">
+					<span class="icon">P</span>
+					<span class="text">+82-2-3448-0608</span>
+				</div>
+				<div class="email">
+					<span class="icon">E</span>
+					<span class="text">andrew.won@keystoneprep.com</span>
+				</div>
+				
+			</div>	
+			<div class="opening-hours">
+				<span class="title">
+					Opening Hours
+				</span>
+				<div class="weekday">
+					<span class="icon">M-F</span>
+					<span class="text">9:00am - 10:00pm</span>
+				</div>
+				<div class="weekend">
+					<span class="icon">S</span>
+					<span class="text">9:00am - 6:00pm</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="separator"></div>
+	<div class="office">
+		<div class="title">
+			<div class="title-icon"></div>
+			<span class="title-text">Hong Kong</span>
+		</div>
+		<div class="detail-container">
+			<div class="address">
+				<span class="title">Swing by</span>
+				<span class="detail">
+					One Island South
+				</span>
+				<span class="detail">
+					2 Heung Yip Road, Wong Chuk Hang, Hong Kong
+				</span>
+				<a href="#">
+					<div class="gmap">Google Map</div>
+				</a>
+
+				<div class="phone">
+					<span class="icon">P</span>
+					<span class="text">+852-2466-7066</span>
+				</div>
+				<div class="email">
+					<span class="icon">E</span>
+					<span class="text">andrew.won@keystoneprep.com</span>
+				</div>
+				
+			</div>	
+			<div class="opening-hours">
+				<span class="title">
+					Opening Hours
+				</span>
+				<div class="weekday">
+					<span class="icon">M-F</span>
+					<span class="text">9:00am - 10:00pm</span>
+				</div>
+				<div class="weekend">
+					<span class="icon">S</span>
+					<span class="text">9:00am - 6:00pm</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<div class="contact-form">
+	<span class="keystone">Keystone</span>
+	<div class="underline"></div>
+	<span class="title">Leave a Message</span>
+
 	<div class="row">
-		<div class="col-sm-8 col-md-6">
 			{{#if enquirySubmitted}}
 			<h3>Thanks for getting in touch.</h3>
 			{{else}}
+
 			<form method="post">
 				<input type="hidden" name="action" value="contact">
 				<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
-					<label>Name</label>
-					<input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}">
+					<input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}" placeholder="Your Name">
 				</div>
 				<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
-					<label>Email</label>
-					<input type="email" name="email" class="form-control" value="{{formData.email}}">
+					<input type="email" name="email" class="form-control" value="{{formData.email}}" placeholder="Your Email">
 				</div>
-				<div class="form-group">
+				<!-- <div class="form-group">
 					<label>Phone</label>
 					<input type="text" name="phone" placeholder="(optional)" class="form-control" value="{{formData.phone}}">
-				</div>
-				<div class="form-group {{#if validationErrors.enquiryType}}has-error{{/if}}">
+				</div> -->
+				<!-- <div class="form-group {{#if validationErrors.enquiryType}}has-error{{/if}}">
 					<label>What are you contacting us about?</label>
 					<select name="enquiryType" class="form-control">
 						<option value="">(select one)</option>
@@ -29,17 +127,15 @@
 						<option value="{{value}}">{{label}}</option>
 						{{/each}}
 					</select>
-				</div>
+				</div> -->
 				<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
-					<label>Message</label>
 					<textarea name="message" placeholder="Leave us a message..." rows="4" class="form-control">{{formData.message}}</textarea>
 				</div>
 				<div class="form-actions">
-					<button type="submit" class="btn btn-primary">Send</button>
+					<button type="submit" class="send">Submit</button>
 				</div>
 			</form>
 			{{/if}}
-		</div>
 	</div>
 </div>
 </div>

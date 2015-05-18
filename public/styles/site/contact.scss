@@ -1,0 +1,257 @@
+
+.contact-main {
+  @include background-contain-image($contact-main-url);
+  height: 85%;
+  position: relative;
+  background-color: $light-grey;
+  
+}
+
+.contact-main-text {
+  /*color: white;*/
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+
+  .title {
+    font-weight: bold;
+    font-size: 80px;
+    @media (max-width: $mobile-width) {
+      font-size: 30px;
+    }
+  }
+  .sub {
+    font-size: 40px;
+    font-weight: lighter;
+    @media (max-width: $mobile-width) {
+      font-size: 20px;
+    }
+  }
+}
+
+
+
+
+.contact-offices {
+  position: relative;
+  background: $light-grey;
+  padding-bottom: 100px;
+  padding-top: 20px;
+  .office {
+    display: inline-block;
+    padding-left: 90px;
+    width: 49%;
+    .title {
+      color: black;
+    }
+    .title-icon {
+      @include background-contain-image($contact-pin);
+      margin: 0 15px 0 0;
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+    }
+
+    .title-text {
+      line-height: 30px;
+      vertical-align: top;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+  .detail-container {
+    padding-left: 40px; /* 25px icon + 15px margin*/
+  }
+
+  .address {
+    padding-top: 30px;
+    .title {
+      color: $main-red;
+      font-size: 18px;
+      font-weight: bold;
+      display: block;
+      padding-bottom: 30px;
+    }
+    .detail {
+      display: block;
+      line-height: 25px
+    }
+
+    .gmap {
+      margin-top: 20px;
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border: 1px solid $main-red;
+      border-radius: 10px;
+      color: white;
+      background-color: $main-red;
+      font-weight: bold;
+      display: inline-block;
+    }
+  }
+  
+  .phone, .email {
+    .icon {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .text {
+      padding-left: 10px;
+    }
+  }
+  .phone {
+    padding-top: 40px;
+  }
+  .email {
+    .text {
+      color: $main-red;
+      font-weight: bold;
+
+    }
+  }
+
+  .opening-hours {
+    padding-top: 70px;
+    .title {
+      font-size: 18px;
+      color: $main-red;
+    }
+    .weekday {
+      margin-top: 20px;
+    }
+    .weekday, .weekend {
+      position: relative;
+      .icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+      }
+      .text {
+        padding-left: 40px;
+      }
+
+    }
+  }
+
+
+  .separator {
+    width: 1px;
+    background-color: $main-red;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+  }
+
+}
+
+
+.contact-form {
+  background: $main-red;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 80px;
+  .keystone {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .underline {
+    width: 40px;
+    height: 2px;
+    background: white;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .row {
+    padding-top: 50px;
+    .form-group {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: bold;
+      padding-bottom: 20px;
+      input, textarea {
+        color: white;
+        border-radius: 0;
+        border: 0px;
+        font-size: 18px;
+        background-color: $dark-red;
+      }
+      input {
+        height: 60px;
+        line-height: 60px;
+      }
+      ::-webkit-input-placeholder {
+         color: white;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+         color: white;  
+      }
+      ::-moz-placeholder {  /* Firefox 19+ */
+         color: white;  
+      }
+      :-ms-input-placeholder {  
+         color: white;  
+      }
+
+      
+    }
+    button.send {
+      width: 180px;
+      height: 50px;
+      line-height: 50px;
+      font-weight: bold;
+      font-size: 18px;
+      color: white;
+      border-radius: 10px;
+      background: transparent;
+      border: 2px solid white;
+    }
+  }
+}
+/*
+<section class="contact-offices">
+  <div class="office">
+    <div class="title">
+      <div class="title-icon"></div>
+      <div class="title-text">Seoul</div>
+    </div>
+    <div class="address">
+      <span class="title">Swing by</span>
+      <span class="detail">
+        Sujeong Building
+      </span>
+      <span class="detail">
+        Gangnam-gu Sinsa-dong 593-3, Seoul, South Korea
+      </span>
+      <a>
+        <div class="gmap">Google Map</div>
+      </a>
+
+      <div class="phone"></div>
+      <div class="email"></div>
+      <div class="opening-hours">
+        <span class="title">
+          
+        </span>
+        <div class="weekday">
+          
+        </div>
+        <div class="weekend">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>*/

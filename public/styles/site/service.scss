@@ -65,13 +65,36 @@
   .grade-6,
   .grade-9,
   .grade-11 {
+/*    &:hover { 
+      background: $main-red;
+      span {
+        color: white !important;
+      }
+      .course-list {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        .separator {
+          background-color: white;
+        }
+      }
+      .course-title,
+      .name,
+      .description,
+      .category {
+        color: white !important;
+      }
+      .underline {
+        background: white !important;
+      }
 
+    }*/
     .title {
       text-align: center;
       padding-top: 100px;
       @media (max-width: $mobile-width) {
         padding-top: 50px;
       }
+
 
       span {
         color: $main-red;
@@ -195,7 +218,7 @@
   .special-programs-title {
     padding-top: 50px;
     padding-bottom: 30px;
-    background: #F0F0F0;
+    background: $light-grey;
     .underline {
       height: 2px;
       width: 20px;
