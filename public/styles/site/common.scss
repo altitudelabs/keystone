@@ -77,3 +77,77 @@ a {
   font-weight: lighter;
   font-style: italic;
 }
+
+/* Form
+ * --------------------------------------------------------------------------*/
+
+.contact-form {
+  background: $main-red;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 80px;
+  .title-small {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .underline {
+    width: 40px;
+    height: 2px;
+    background: white;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .row {
+    padding-top: 50px;
+    .form-group {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: bold;
+      padding-bottom: 20px;
+      input, textarea {
+        color: white;
+        border-radius: 0;
+        border: 0px;
+        font-size: 18px;
+        background-color: $dark-red;
+      }
+      input {
+        height: 60px;
+        line-height: 60px;
+      }
+      ::-webkit-input-placeholder {
+         color: white;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+         color: white;  
+      }
+      ::-moz-placeholder {  /* Firefox 19+ */
+         color: white;  
+      }
+      :-ms-input-placeholder {  
+         color: white;  
+      }
+
+      
+    }
+    button.send {
+      width: 180px;
+      height: 50px;
+      line-height: 50px;
+      font-weight: bold;
+      font-size: 18px;
+      color: white;
+      border-radius: 10px;
+      background: transparent;
+      border: 2px solid white;
+    }
+  }
+}

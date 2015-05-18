@@ -1,0 +1,247 @@
+$section-padding-top: 60px;
+$section-title-font-size: 40px;
+.about-main {
+  @include background-cover-image($about-main-url);
+  height: 85%;
+  position: relative;
+  .scroll-down-container {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+  }
+  .scroll-down-button {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    padding: 18px;
+    bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    border: 2px white solid;
+    cursor: pointer;
+
+    &:hover { 
+
+    }
+    div {
+      width: 100%;
+      height: 100%;
+      @include background-contain-image($arrow-down);
+
+    }
+  }
+}
+.about-main-text {
+  color: white;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+
+  .title {
+    font-weight: bold;
+    font-size: 80px;
+    @media (max-width: $mobile-width) {
+      font-size: 30px;
+    }
+  }
+  .sub {
+    font-size: 40px;
+    font-weight: lighter;
+    @media (max-width: $mobile-width) {
+      font-size: 20px;
+    }
+  }
+}
+
+
+.about-history {
+  padding-top: $section-padding-top;
+  padding-bottom: 60px;
+  text-align: center;
+  .title {
+    font-size: $section-title-font-size;
+    /*color: $main-red;*/
+    font-weight: bold;
+  }
+  .description {
+    padding-top: 30px;
+    padding: 30px 20% 0 20%;
+    text-align: justify;
+    span {
+      margin-bottom: 20px;
+      font-size: 16px;
+      display: block;
+    }
+  }
+}
+
+.about-timeline {
+  padding-top: 30px;
+  background-color: $main-red;
+  text-align: center;
+  overflow: hidden;
+  .title {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .content {
+    position: relative;
+    .line {
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      background: white;
+      .circle {
+        position: absolute;
+        top: -16px;
+        left: -7.5px;
+        width: 16px;
+        height: 16px;
+        border: 1px solid white;
+        border-radius: 100px;
+      }
+    }
+
+    .right {
+      left: 0;
+    }
+    .left {
+      right: 0;
+    }
+    .2006 {
+
+      .dotted-line {
+
+      }
+    }
+  }
+}
+/*
+<section class="about-timeline">
+  <span class="title">Start From Here</span>
+  <div class="content">
+    <div class="line">
+      <div class="circle"></div>
+    </div>
+    <div class="2006">
+      <span class="year">2006</span>
+      <div class="underline"></div>
+      <ul class="achievements">
+        <li>Founded Keystone Education</li>
+        <li>Launched Consulting and College Application Program(CAP)</li>
+      </ul>
+    </div>
+    <div class="2007"></div>
+    <div class="2009"></div>
+    <div class="2010"></div>
+    <div class="2012"></div>
+    <div class="2013"></div>
+    <div class="2014"></div>
+    
+  </div>
+</section>*/
+
+
+
+.about-philosophy {
+  padding-top: $section-padding-top;
+  padding-bottom: 40px;
+  .title {
+    text-align: center;
+    font-size: $section-title-font-size;
+    font-weight: bold;
+  }
+
+  .quote {
+    text-align: justify;
+    margin-top: 60px;
+    padding: $section-padding-top 20% 0 20%;
+    background: $light-grey;
+    .quotes {
+      text-align: center;
+      height: 80px;
+      line-height: 80px;
+      .open-quote {
+        font-size: 80px;
+        color: $main-red;
+
+      }
+      .close-quote {
+        font-size: 20px;
+        color: $main-red;
+      }
+    }
+    .content {
+
+      .text {
+        display: block;
+        font-size: 20px;
+        color: $main-red;
+      }
+    }
+    .credit {
+      color: $main-red;
+      text-align: right;
+      padding: 30px;
+    }
+  }
+
+  .test,
+  .enrichment {
+    padding: 40px 20% 0 20%;
+    text-align: justify;
+    .title {
+      text-align: left;
+      font-size: 20px;
+      color: $main-red;
+    }
+    .content {
+      .text {
+        span {
+          margin-top: 20px;
+          display: block;
+        }
+      }
+      .diagram {
+        margin-top: 40px;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+      }
+    }
+  }
+  .test .diagram {
+    @include background-contain-image($about-test);
+  }
+  .enrichment .diagram {
+    @include background-contain-image($about-test);
+  }
+    /*<section class="test">
+    <div class="title">Test Prep Programs</div>
+    <div class="content">
+      <div class="text">
+        <span>
+          Of all the obstacles on the road to higher education, standardized tests often fill students with more anxiety and apprehension not to mention stress than any other. Yet, it is also the easiest one to overcome if the student has the right attitude. As Bill Ayers summarized, standardized tests like the SAT and ACT measure isolated skills that can be honed and perfected so that students can reach their maximum potential
+        </span>
+        <span>
+          Our approach is built on the three Rs: Recognition, Repetition, and Review. We build our test prep programs around these core study habits to help students recognize patterns specific to standardized tests, reinforce understanding through tailored repetition, and inculcate the skills for longevity through offline and online review programs.
+        </span>
+      </div>*/
+}
+/*<section class="about-philosophy">
+  <section class="title">
+    <span>Our Philosophy</span>
+  </section>
+  <section class="quote"></section>
+  <section class="test"></section>
+  <section class="enrichment"></section>
+
+</section>
+*/

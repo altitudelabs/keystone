@@ -1,0 +1,116 @@
+
+.career-main {
+  @include background-cover-image($career-main-url);
+  height: 85%;
+  position: relative;
+  .scroll-down-container {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+  }
+  .scroll-down-button {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    padding: 18px;
+    bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    border: 2px white solid;
+    cursor: pointer;
+
+    &:hover { 
+
+    }
+    div {
+      width: 100%;
+      height: 100%;
+      @include background-contain-image($arrow-down);
+
+    }
+  }
+}
+.career-main-text {
+  color: white;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+
+  .title {
+    font-weight: bold;
+    font-size: 80px;
+    @media (max-width: $mobile-width) {
+      font-size: 30px;
+    }
+  }
+  .sub {
+    font-size: 40px;
+    font-weight: lighter;
+    @media (max-width: $mobile-width) {
+      font-size: 20px;
+    }
+  }
+}
+
+
+
+
+.career-openings {
+  text-align: center;
+  padding-top: 50px;
+  .title {
+    color: $main-red;
+    font-weight: bold;
+  }
+
+  .jobs-container {
+    padding-top: 20px;
+    text-align: left;
+    width: 70%;
+    margin: auto;
+    @media (max-width: $mobile-width) {
+      width: 90%;
+    }
+  }
+
+  .jobs {
+    position: relative;
+    margin-left: 20px;
+    border-top: 1px solid $main-red;
+    padding: 0 0 100px 0;
+
+    .job {
+      border-bottom: 1px solid $main-red;
+      list-style: none;
+      padding: 20px 20px 20px 20px;
+      position: relative;
+      cursor: pointer;
+    }
+    .job-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .toggle-button {
+      float: right;
+      width: 15px;
+      height: 30px;
+      @include background-contain-image($career-plus);
+    }
+  }
+}
+/*
+
+<section class="career-openings">
+  <h1 class="title"> Job Opening</h1>
+  <div class="jobs-container">
+    <ul class="jobs">
+      <li class="job">
+        <span class="job-title">Instructors</span>
+        <div class="toggle-button"></div>
+      </li>
+    </ul>
+  </div>
+</section>
+*/
