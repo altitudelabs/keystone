@@ -64,42 +64,15 @@
   .grade-6,
   .grade-9,
   .grade-11 {
-/*    &:hover { 
-      background: $main-red;
-      span {
-        color: white !important;
-      }
-      .course-list {
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
-        .separator {
-          background-color: white;
-        }
-      }
-      .course-title,
-      .name,
-      .description,
-      .category {
-        color: white !important;
-      }
-      .underline {
-        background: white !important;
-      }
-
-    }*/
     .title {
       text-align: center;
       padding-top: 100px;
       @media (max-width: $mobile-width) {
         padding-top: 50px;
       }
-
-
       span {
         color: $main-red;
       }
-
-
       .grades-text {
         font-size: 25px;
       }
@@ -119,7 +92,6 @@
         }
       }
     }
-
     .course-list {
       width: 100%;
       position: relative;
@@ -129,6 +101,8 @@
       text-align: center;
       @media (max-width: $mobile-width) {
         margin-top: 50px;
+        border-top: 0px;
+        border-bottom: 0px;
       }
 
       .separator {
@@ -138,6 +112,9 @@
         position: absolute;
         top: 0px;
         left: 50%;
+        @media (max-width: $mobile-width) {
+          display: none;
+        }
 
       }
     }
@@ -147,65 +124,125 @@
       width: 49%;
       display: inline-block;
       padding-bottom: 60px;
+      @media (max-width: $mobile-width) {
+        width: 100%;
+      }
+    }
+    .course-icon {
+      margin-top: -65px;
+      height: 130px;
+      @media (max-width: $mobile-width) {
+        margin-top: -35px;
+        height: 70px;
+      }
+      &.cornerstone {
+        @include background-contain-image($cornerstone-icon);
+      }
 
-      .course-icon {
-        margin-top: -65px;
-        height: 130px;
+      &.BAP {
+        @include background-contain-image($bap-icon);
+      }
+      &.enrichment {
+        @include background-contain-image($enrichment-icon);
+
+      }
+      &.milestone {
+        @include background-contain-image($milestone-icon);
+      }
+      &.test {
+        @include background-contain-image($test-icon);
+      }
+      &.capstone {
+        @include background-contain-image($CAPstone-icon);
+      }
+    }
+    .course-title {
+      padding-top: 50px;
+      font-size: 16px;
+      @media (max-width: $mobile-width) {
+        font-size: 14px;
+        padding-top: 20px;
+      }
+
+      .underline {
+        background-color: $main-grey;
+        width: 25px;
+        height: 2px;
+        margin: auto;
+      }
+
+      .name {
+        padding-top: 25px;
+        font-size: 32px;
+        font-weight: bold;
         @media (max-width: $mobile-width) {
-          margin-top: -35px;
-          height: 70px;
-        }
-        &.cornerstone {
-          @include background-contain-image($cornerstone-icon);
-        }
-        &.BAP {
-          @include background-contain-image($bap-icon);
-        }
-        &.enrichment {
-          @include background-contain-image($enrichment-icon);
-
-        }
-        &.milestone {
-          @include background-contain-image($milestone-icon);
-        }
-        &.test {
-          @include background-contain-image($test-icon);
-        }
-        &.capstone {
-          @include background-contain-image($CAPstone-icon);
+          font-size: 15px;
+          
         }
       }
-      .course-title {
-        padding-top: 50px;
-        font-size: 16px;
-        @media (max-width: $mobile-width) {
-          font-size: 14px;
-          padding-top: 20px;
-        }
+    }
 
-        .underline {
-          background-color: $main-grey;
-          width: 25px;
-          height: 2px;
-          margin: auto;
-        }
+    .description {
+      padding-top: 20px;
+      width: 60%;
+      margin: auto;
 
-        .name {
-          padding-top: 25px;
-          font-size: 32px;
-          font-weight: bold;
-          @media (max-width: $mobile-width) {
-            font-size: 15px;
-            
+    }
+
+    &:hover {
+      @media (min-width: $mobile-width) {
+        background: $main-red;
+        .title {
+          span {
+            color: white;
+          }
+          .underline {
+            background: white;
           }
         }
-      }
+        .course-list {
+          border-top: 1px solid white;
+          border-bottom: 1px solid white;
 
-      .description {
-        padding-top: 20px;
-        width: 60%;
-        margin: auto;
+        }
+        .separator {
+          background-color: white;
+        }
+       
+        .cornerstone {
+          @include background-contain-image($cornerstone-icon-hover);
+        }
+        .BAP {
+          @include background-contain-image($bap-icon-hover);
+        }
+        .enrichment {
+          @include background-contain-image($enrichment-icon-hover);
 
+        }
+        .milestone {
+          @include background-contain-image($milestone-icon-hover);
+        }
+        .test {
+          @include background-contain-image($test-icon-hover);
+        }
+        .capstone {
+          @include background-contain-image($CAPstone-icon-hover);
+        }
+        .course-title {
+          .category {
+            color: white;
+          }
+          .underline {
+            background-color: white;
+          }
+          .name {
+            color: white;
+          }
+        }
+        .description {
+          color: white;
+        }
+        
       }
 
     }

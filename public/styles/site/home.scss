@@ -1,7 +1,7 @@
 
 .home-main {
   @include background-cover-image($home-main-url);
-  height: 70%;
+  height: 80%;
   /*min-height: 500px;*/
   position: relative;
 }
