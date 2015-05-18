@@ -78,7 +78,14 @@ $section-title-font-size: 40px;
 }
 
 .about-timeline {
-  padding-top: 30px;
+  padding: 80px 0 0 0;
+  background: $main-red;
+  div {
+    height: 850px;
+    @include background-contain-image($about-timeline);
+
+  }
+  /*padding-top: 30px;
   background-color: $main-red;
   text-align: center;
   overflow: hidden;
@@ -120,7 +127,7 @@ $section-title-font-size: 40px;
 
       }
     }
-  }
+  }*/
 }
 /*
 <section class="about-timeline">
@@ -164,7 +171,12 @@ $section-title-font-size: 40px;
     padding: $section-padding-top 20% 0 20%;
     background: $light-grey;
     .quotes {
-      text-align: center;
+      width: 50px;
+      height: 50px;
+      margin: auto;
+      @include background-contain-image($quotes-url);
+
+      /*text-align: center;
       height: 80px;
       line-height: 80px;
       .open-quote {
@@ -175,7 +187,7 @@ $section-title-font-size: 40px;
       .close-quote {
         font-size: 20px;
         color: $main-red;
-      }
+      }*/
     }
     .content {
 

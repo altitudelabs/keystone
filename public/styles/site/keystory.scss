@@ -74,7 +74,12 @@
       text-align: justify;
 
       .quotes {
-        text-align: center;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        @include background-contain-image($quotes-url);
+
+       /* text-align: center;
         height: 80px;
         line-height: 80px;
         .open-quote {
@@ -86,7 +91,7 @@
         .close-quote {
           font-size: 20px;
           color: $main-red;
-        }
+        }*/
       }
       .content {
 
