@@ -7,7 +7,7 @@ App.Service.controller = {
     console.log('init');
     $('.scroll-down-button').on('click', function() {
       $('html, body').animate({
-        scrollTop: $('.service-regular-programs').offset().top
+        scrollTop: $('.service-regular-programs').offset().top - 70
     }, 500);
     });
   }

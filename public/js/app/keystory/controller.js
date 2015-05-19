@@ -8,7 +8,7 @@ App.Keystory.controller = {
     console.log('init');
     $('.scroll-down-button').on('click', function() {
       $('html, body').animate({
-        scrollTop: $('.keystory-testimonials').offset().top
+        scrollTop: $('.keystory-testimonials').offset().top - 70
       }, 500);
     });
   }

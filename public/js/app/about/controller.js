@@ -7,7 +7,7 @@ App.About.controller = {
     console.log('init');
     $('.scroll-down-button').on('click', function() {
       $('html, body').animate({
-        scrollTop: $('.about-history').offset().top
+        scrollTop: $('.about-history').offset().top - 70
     }, 500);
     });
   }

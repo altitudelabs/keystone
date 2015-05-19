@@ -10,7 +10,7 @@ App.Career.controller = {
     console.log('init');
     $('.scroll-down-button').on('click', function() {
       $('html, body').animate({
-        scrollTop: $('.career-openings').offset().top
+        scrollTop: $('.career-openings').offset().top - 70
     }, 500);
     });
   }
