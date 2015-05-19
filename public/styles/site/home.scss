@@ -2,8 +2,9 @@
 .home-main {
   @include background-cover-image($home-main-url);
   height: 80%;
-  /*min-height: 500px;*/
+  min-height: 500px;
   position: relative;
+  
 }
 
 .home-main-overlay {

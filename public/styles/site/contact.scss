@@ -2,6 +2,8 @@
 .contact-main {
   @include background-contain-image($contact-main-url);
   height: 85%;
+  min-height: 500px;
+  
   position: relative;
   background-color: $light-grey;
   

@@ -3,6 +3,8 @@ $section-title-font-size: 40px;
 .about-main {
   @include background-cover-image($about-main-url);
   height: 85%;
+  min-height: 500px;
+  
   position: relative;
   .scroll-down-container {
     position: absolute;

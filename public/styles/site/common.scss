@@ -12,6 +12,7 @@ body {
   min-height: 100%;
   height: 1px;
   margin: 0;
+  padding-top: $nav-height;
 }
 a {
   color: $main-grey;
@@ -37,6 +38,15 @@ a {
     repeat: $repeat;
     size: contain;
   }
+}
+
+@mixin transition($type: all, $duration: 500ms, $style: ease) {
+  -webkit-transition: $type $duration $style;
+  -moz-transition: $type $duration $style;
+  -ms-transition: $type $duration $style;
+  -o-transition: $type $duration $style;
+  transition: $type $duration $style;
+  
 }
 
 /* font - HelveticaNeueLTStd

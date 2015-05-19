@@ -2,6 +2,8 @@
 .career-main {
   @include background-cover-image($career-main-url);
   height: 85%;
+  min-height: 500px;
+  
   position: relative;
   .scroll-down-container {
     position: absolute;
