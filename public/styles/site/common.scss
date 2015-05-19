@@ -13,6 +13,7 @@ body {
   height: 1px;
   margin: 0;
   padding-top: $nav-height;
+  width: 100%;
 }
 a {
   color: $main-grey;
@@ -112,52 +113,54 @@ a {
     font-size: 40px;
     color: white;
     font-weight: bold;
+
+  }
+  form {
+    padding-top: 50px;
   }
 
-  .row {
-    padding-top: 50px;
-    .form-group {
-      width: 70%;
-      margin-left: auto;
-      margin-right: auto;
-      font-weight: bold;
-      padding-bottom: 20px;
-      input, textarea {
-        color: white;
-        border-radius: 0;
-        border: 0px;
-        font-size: 18px;
-        background-color: $dark-red;
-      }
-      input {
-        height: 60px;
-        line-height: 60px;
-      }
-      ::-webkit-input-placeholder {
-         color: white;
-      }
-      :-moz-placeholder { /* Firefox 18- */
-         color: white;  
-      }
-      ::-moz-placeholder {  /* Firefox 19+ */
-         color: white;  
-      }
-      :-ms-input-placeholder {  
-         color: white;  
-      }
-
-      
-    }
-    button.send {
-      width: 180px;
-      height: 50px;
-      line-height: 50px;
-      font-weight: bold;
-      font-size: 18px;
+  .form-group {
+    width: 70%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    padding-bottom: 20px;
+    input, textarea {
       color: white;
-      border-radius: 10px;
-      background: transparent;
-      border: 2px solid white;
+      border-radius: 0;
+      border: 0px;
+      font-size: 18px;
+      background-color: $dark-red;
     }
+    input {
+      height: 60px;
+      line-height: 60px;
+    }
+    ::-webkit-input-placeholder {
+       color: white;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+       color: white;  
+    }
+    ::-moz-placeholder {  /* Firefox 19+ */
+       color: white;  
+    }
+    :-ms-input-placeholder {  
+       color: white;  
+    }
+
+    
+  }
+  button.send {
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid white;
   }
 }
