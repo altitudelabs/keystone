@@ -26,7 +26,7 @@ App.Home.controller = {
       minSlides: sliderNumber,
       maxSlides: sliderNumber,
       pager: false,
-      randomStart: true,
+      // randomStart: true,
       infiniteLoop: true,
       touchEnabled: true,
       moveSlides: 1,

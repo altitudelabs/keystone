@@ -59,7 +59,6 @@ App.Util = {
   },
   exec: function(controllerName, action) {
     action = action ? action : 'init';
-
     if (controllerName !== '' && !!App[controllerName].controller && typeof App[controllerName].controller[action] === 'function') {
       App[controllerName].controller[action]();
     }

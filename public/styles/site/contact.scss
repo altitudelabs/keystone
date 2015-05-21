@@ -1,0 +1,169 @@
+
+.contact-main {
+  @include background-contain-image($contact-main-url);
+  height: 85%;
+  min-height: 500px;
+  
+  position: relative;
+  background-color: $light-grey;
+  
+}
+
+.contact-main-text {
+  /*color: white;*/
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+
+  .title {
+    font-weight: bold;
+    font-size: 80px;
+    @media (max-width: $mobile-width) {
+      font-size: 30px;
+    }
+  }
+  .sub {
+    font-size: 40px;
+    font-weight: lighter;
+    @media (max-width: $mobile-width) {
+      font-size: 20px;
+    }
+  }
+}
+
+
+
+
+.contact-offices {
+  position: relative;
+  background: $light-grey;
+  padding-bottom: 100px;
+  padding-top: 20px;
+  @media (max-width: $tablet-width) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .office {
+    display: inline-block;
+    padding: 0 10%;
+    width: 50%;
+    &.seoul {
+      float: left;
+    }
+    @media (max-width: $tablet-width) {
+      width: 100%;
+      padding-bottom: 70px;
+    }
+
+    .title {
+      color: black;
+    }
+    .title-icon {
+      @include background-contain-image($contact-pin);
+      margin: 0 15px 0 0;
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+    }
+
+    .title-text {
+      line-height: 30px;
+      vertical-align: top;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+  .detail-container {
+    padding-left: 40px; /* 25px icon + 15px margin*/
+  }
+
+  .address {
+    padding-top: 30px;
+    .title {
+      color: $main-red;
+      font-size: 18px;
+      font-weight: bold;
+      display: block;
+      padding-bottom: 30px;
+    }
+    .detail {
+      display: block;
+      line-height: 25px
+    }
+
+    .gmap {
+      margin-top: 20px;
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border: 1px solid $main-red;
+      border-radius: 10px;
+      color: white;
+      background-color: $main-red;
+      font-weight: bold;
+      display: inline-block;
+    }
+  }
+  
+  .phone, .email {
+    .icon {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .text {
+      padding-left: 10px;
+    }
+  }
+  .phone {
+    padding-top: 40px;
+  }
+  .email {
+    .text {
+      color: $main-red;
+      font-weight: bold;
+
+    }
+  }
+
+  .opening-hours {
+    padding-top: 70px;
+    .title {
+      font-size: 18px;
+      color: $main-red;
+    }
+    .weekday {
+      margin-top: 20px;
+    }
+    .weekday, .weekend {
+      position: relative;
+      .icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+      }
+      .text {
+        padding-left: 40px;
+      }
+
+    }
+  }
+
+
+  .separator {
+    width: 1px;
+    background-color: $main-red;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+
+  }
+
+}
+

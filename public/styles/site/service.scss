@@ -1,0 +1,378 @@
+
+.service-main {
+  @include background-cover-image($service-main-url);
+  height: 85%;
+  min-height: 500px;
+  
+  position: relative;
+  .scroll-down-container {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+  }
+  .scroll-down-button {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    padding: 18px;
+    bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    border: 2px white solid;
+    cursor: pointer;
+
+    &:hover { 
+
+    }
+    div {
+      width: 100%;
+      height: 100%;
+      @include background-contain-image($arrow-down);
+
+    }
+  }
+}
+.service-main-text {
+  color: white;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+
+  .title {
+    font-weight: bold;
+    font-size: 80px;
+    @media (max-width: $mobile-width) {
+      font-size: 30px;
+    }
+  }
+  .sub {
+    font-size: 40px;
+    font-weight: lighter;
+    @media (max-width: $mobile-width) {
+      font-size: 20px;
+    }
+  }
+}
+
+
+
+.service-regular-programs {
+  a:hover {
+    text-decoration: none;
+  }
+
+  .grade-6,
+  .grade-9,
+  .grade-11 {
+    .title {
+      text-align: center;
+      padding-top: 100px;
+      @media (max-width: $mobile-width) {
+        padding-top: 50px;
+      }
+      span {
+        color: $main-red;
+      }
+      .grades-text {
+        font-size: 25px;
+      }
+      .underline {
+        width: 30px;
+        background: $main-red;
+        height: 2px;
+        margin: auto;
+        margin-bottom: 10px;
+      }
+
+      .grades-number {
+        font-size: 65px;
+        font-weight: bold;
+        @media (max-width: $mobile-width) {
+          font-size: 40px;
+        }
+      }
+    }
+    .course-list {
+      width: 100%;
+      position: relative;
+      margin-top: 80px;
+      border-top: 1px solid $main-red;
+      border-bottom: 1px solid $main-red;
+      text-align: center;
+      @media (max-width: $mobile-width) {
+        margin-top: 50px;
+        border-top: 0px;
+        border-bottom: 0px;
+      }
+
+      .separator {
+        width: 1px;
+        background-color: $main-red;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        @media (max-width: $mobile-width) {
+          display: none;
+        }
+
+      }
+    }
+    .course-item {
+      height: 100%;
+      vertical-align: top;
+      width: 49%;
+      display: inline-block;
+      padding-bottom: 60px;
+      @media (max-width: $mobile-width) {
+        width: 100%;
+      }
+    }
+    .course-icon {
+      margin-top: -65px;
+      height: 130px;
+      @media (max-width: $mobile-width) {
+        margin-top: -35px;
+        height: 70px;
+      }
+      &.cornerstone {
+        @include background-contain-image($cornerstone-icon);
+      }
+
+      &.BAP {
+        @include background-contain-image($bap-icon);
+      }
+      &.enrichment {
+        @include background-contain-image($enrichment-icon);
+
+      }
+      &.milestone {
+        @include background-contain-image($milestone-icon);
+      }
+      &.test {
+        @include background-contain-image($test-icon);
+      }
+      &.capstone {
+        @include background-contain-image($CAPstone-icon);
+      }
+    }
+    .course-title {
+      padding-top: 50px;
+      font-size: 16px;
+      @media (max-width: $mobile-width) {
+        font-size: 14px;
+        padding-top: 20px;
+      }
+
+      .underline {
+        background-color: $main-grey;
+        width: 25px;
+        height: 2px;
+        margin: auto;
+      }
+
+      .name {
+        padding-top: 25px;
+        font-size: 32px;
+        font-weight: bold;
+        @media (max-width: $mobile-width) {
+          font-size: 15px;
+          
+        }
+      }
+    }
+
+    .description {
+      padding-top: 20px;
+      width: 60%;
+      margin: auto;
+
+    }
+
+    &:hover {
+      @media (min-width: $mobile-width) {
+        background: $main-red;
+        .title {
+          span {
+            color: white;
+          }
+          .underline {
+            background: white;
+          }
+        }
+        .course-list {
+          border-top: 1px solid white;
+          border-bottom: 1px solid white;
+
+        }
+        .separator {
+          background-color: white;
+        }
+       
+        .cornerstone {
+          @include background-contain-image($cornerstone-icon-hover);
+        }
+        .BAP {
+          @include background-contain-image($bap-icon-hover);
+        }
+        .enrichment {
+          @include background-contain-image($enrichment-icon-hover);
+
+        }
+        .milestone {
+          @include background-contain-image($milestone-icon-hover);
+        }
+        .test {
+          @include background-contain-image($test-icon-hover);
+        }
+        .capstone {
+          @include background-contain-image($CAPstone-icon-hover);
+        }
+        .course-title {
+          .category {
+            color: white;
+          }
+          .underline {
+            background-color: white;
+          }
+          .name {
+            color: white;
+          }
+        }
+        .description {
+          color: white;
+        }
+        
+      }
+
+    }
+  }
+}
+
+.service-special-programs {
+  text-align: center;
+  .special-programs-title {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: $light-grey;
+    .underline {
+      height: 2px;
+      width: 20px;
+      margin: auto auto 10px auto;
+      background-color: $main-red;
+    }
+    .text {
+      color: $main-red;
+      font-size: 30px;
+      font-weight: bold;
+      @media (max-width: $mobile-width) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .content {
+    .bootcamp {
+      @include background-cover-image($bootcamp-main-url);
+    }
+    .snapshot {
+      @include background-cover-image($snapshot-main-url);
+    }
+    .bootcamp,
+    .snapshot {
+      height: 40vh;
+      min-height: 300px;
+      position: relative;
+      cursor: pointer;
+      .overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: black;
+        opacity: 0.35;
+      }
+
+      .content {
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        .title {
+          color: white;
+          display: block;
+          font-size: 30px;
+          font-weight: bold;
+          @media (max-width: $mobile-width) {
+            font-size: 20px;
+          }
+        }
+        .sub {
+          display: block;
+          color: white;
+          margin-top: 8px;
+          font-size: 15px;
+        }
+        .more-button {
+          font-size: 18px;
+          font-weight: bold;
+          vertical-align: middle;
+          margin-top: 35px;
+          color: white;
+          width: 120px;
+          line-height: 50px;
+          height: 50px;
+          border: 2px solid white;
+          border-radius: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          @media (max-width: $mobile-width) {
+            font-size: 14px;
+            width: 80px;
+            height: 40px;
+            line-height: 40px;
+          }
+        }
+      }
+
+      &:hover {
+        .overlay {
+          background: $main-red;
+          opacity: 0.8;
+        }
+        .more-button {
+          background: white;
+          color: $main-red;
+        }
+      }
+    }
+  }
+}
+/*<section class="service-special-programs">
+  <div class="title">We Are Ready to Help</div>
+  <div class="content">
+    <section class="bootcamp">
+      <a>
+        <div class="overlay"></div>
+        <div class="bootcamp-content">
+          <span class="title"></span>
+          <span class="sub"></span>
+          <div class="more-button">More</div>
+        </div>
+        
+      </a>
+    </section>
+    <section class="snapshot">
+      <a>
+        <div class="overlay"></div>
+        <div class="content">
+          <span class="title">Snapshot</span>
+          <span class="sub">One-time (60 - 90 minutes) advisory service</span>
+          <div class="more-button">More</div>
+        </div>
+      </a>
+    </section>
+  </div>
+</section>*/

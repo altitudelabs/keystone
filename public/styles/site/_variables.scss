@@ -1,7 +1,63 @@
-// Override Bootstrap variables in this file, e.g.
+/* =Table of Contents
+--------------------------------------------------------------
+  =layout
+  =color
+  =image url
+-------------------------------------------------------------- */
 
-$main-grey: #575656;
-$main-red: #B72025;
-$footer-grey: #323232;
+
+/* =layout
+* --------------------------------------------------------------------------*/
+$nav-height: 70px;
 
 $mobile-width: 600px;
+$tablet-width: 800px;
+
+
+/* =color
+* --------------------------------------------------------------------------*/
+$main-grey: #575656;
+$light-grey: #F0F0F0;
+$main-red: #B72025;
+$dark-red: #9a0107;
+$footer-grey: #323232;
+
+
+/* =image url
+* --------------------------------------------------------------------------*/
+$home-main-url: '../images/home-hero@1x.png';
+$service-main-url: '../images/service-introduction@2x.png';
+$keystory-main-url: '../images/keystory-introduction@1x.png';
+$career-main-url: '../images/career-introduction@2x.png';
+$about-main-url: '../images/about-introduction@2x.png';
+$bootcamp-main-url: '../images/bootcamp@2x.png';
+$snapshot-main-url: '../images/snapshot@2x.png';
+$contact-main-url: '../images/contact-world-map@2x.png';
+
+$arrow-down: '../images/call-to-action.png';
+
+$cornerstone-icon: '../images/service-cornerstone@2x.png';
+$bap-icon: '../images/service-boarding-school@2x.png';
+$enrichment-icon: '../images/service-curricular-enrichment@2x.png';
+$milestone-icon: '../images/service-milestone@2x.png';
+$test-icon: '../images/service-test-preparation@2x.png';
+$CAPstone-icon: '../images/service-capstone@2x.png';
+
+$cornerstone-icon-hover: '../images/service-cornerstone-hover@2x.png';
+$bap-icon-hover: '../images/service-boarding-school-hover@2x.png';
+$enrichment-icon-hover: '../images/service-curricular-enrichment-hover@2x.png';
+$milestone-icon-hover: '../images/service-milestone-hover@2x.png';
+$test-icon-hover: '../images/service-test-preparation-hover@2x.png';
+$CAPstone-icon-hover: '../images/service-capstone-hover@2x.png';
+
+
+$contact-pin: '../images/contact-location-pin@2x.png';
+
+$career-plus: '../images/career-plus.png';
+
+$about-test: '../images/about-testprep.png';
+$about-timeline: '../images/about-timeline@2x.png';
+$about-enrichment: '../images/about-enrichment@2x.png';
+
+
+$quotes-url: '../images/about-quotes@2x.png';

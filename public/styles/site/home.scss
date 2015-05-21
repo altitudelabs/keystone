@@ -1,15 +1,10 @@
-$home-main-url: '../images/service-introduction@2x.png';
-$home-carousel-service-url: '../images/service-introduction@2x.png';
-$home-carousel-keystory-url: '../images/keystory-introduction@1x.png';
-$home-carousel-career-url: '../images/career-introduction@2x.png';
-$home-carousel-about-url: '../images/about-introduction@2x.png';
-$home-carousel-service-url: '../images/service-introduction@2x.png';
 
 .home-main {
   @include background-cover-image($home-main-url);
-  height: 70%;
-  /*min-height: 500px;*/
+  height: 80%;
+  min-height: 500px;
   position: relative;
+  
 }
 
 .home-main-overlay {
@@ -59,19 +54,19 @@ $home-carousel-service-url: '../images/service-introduction@2x.png';
   position: relative;
 
   &.service {
-    @include background-cover-image($home-carousel-service-url);
+    @include background-cover-image($service-main-url);
   }
   &.keystory {
-    @include background-cover-image($home-carousel-keystory-url);
+    @include background-cover-image($keystory-main-url);
   }
   /*&.contact {
     @include background-cover-image($home-carousel-contact-url);
   }*/
   &.career {
-    @include background-cover-image($home-carousel-career-url);
+    @include background-cover-image($career-main-url);
   }
   &.about {
-    @include background-cover-image($home-carousel-about-url);
+    @include background-cover-image($about-main-url);
   }
   & .overlay {
     height: 100%;
