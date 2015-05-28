@@ -91,16 +91,16 @@
 
         <!-- <form method="post"> -->
         <form method="post">
-          <input type="hidden" name="action" value="contact">
+          <input autocomplete="off" type="hidden" name="action" value="contact">
           <!-- <div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
-            <input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}" placeholder="Your Name">
+            <input autocomplete="off" type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}" placeholder="Your Name">
           </div> -->
           <div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
-            <input type="email" name="email" class="form-control" value="{{formData.email}}" placeholder="Your Email">
+            <input autocomplete="off" type="email" name="email" class="form-control" value="{{formData.email}}" placeholder="Your Email">
           </div>
           <!-- <div class="form-group">
             <label>Phone</label>
-            <input type="text" name="phone" placeholder="(optional)" class="form-control" value="{{formData.phone}}">
+            <input autocomplete="off" type="text" name="phone" placeholder="(optional)" class="form-control" value="{{formData.phone}}">
           </div> -->
           <!-- <div class="form-group {{#if validationErrors.enquiryType}}has-error{{/if}}">
             <label>What are you contacting us about?</label>

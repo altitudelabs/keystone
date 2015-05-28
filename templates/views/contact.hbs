@@ -97,7 +97,7 @@
 </section>
 
 
-<div class="contact-form">
+<div class="contact-form" data-controller="Contact" data-action="initForm">
 	<span class="title-small">Keystone</span>
 	<div class="underline"></div>
 	<span class="title">Leave a Message</span>
@@ -107,13 +107,13 @@
 			{{else}}
  -->	
 
-			<form method="post">
-				<input type="hidden" name="action" value="contact">
+			<form method="post" action="/contact">
+				<input autocomplete="off" required type="hidden" name="action" value="contact">
 				<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
-					<input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}" placeholder="Your Name">
+					<input autocomplete="off" required type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}" placeholder="Your Name">
 				</div>
 				<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
-					<input type="email" name="email" class="form-control" value="{{formData.email}}" placeholder="Your Email">
+					<input autocomplete="off" required type="email" name="email" class="form-control" value="{{formData.email}}" placeholder="Your Email">
 				</div>
 				<!-- <div class="form-group">
 					<label>Phone</label>

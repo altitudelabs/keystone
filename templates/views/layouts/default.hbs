@@ -33,6 +33,7 @@
 				<li class="nav-button"><a href="/about">About</a></li>
 				<li class="nav-button"><a href="/career">Career</a></li>
 				<li class="nav-button"><a href="/contact">Contact</a></li>
+				<li class="nav-button"><a href="/contact">{{locals.section}}</a></li>
 			</ul>
 
 
@@ -79,6 +80,19 @@
 			{{/if}}
 		</div>
 		{{/if}}
+
+
+		<div class="alert-message">
+      <div class="alert alert-success" role="alert">
+        You’re on the list! 
+      </div>
+      <div class="alert alert-info" role="alert">
+        You have already subscribed!
+      </div>
+      <div class="alert alert-danger" role="alert">
+        Oops! There seems to be an error! Please try again.
+      </div>
+    </div>
 		<!-- The content block should contain the body of your template's content-->
 		{{{body}}}
 		
@@ -125,9 +139,9 @@
 		{{{isAdminEditorJS user}}}
 
 		
-		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-		<script src="bower_components/dw-bxslider-4/dist/jquery.bxslider.min.js"></script>
+		<script src="/bower_components/dw-bxslider-4/dist/jquery.bxslider.min.js"></script>
 		<script src="/js/app/app.js"></script>
 
 		<script src="/js/app/nav/index.js"></script>
@@ -145,6 +159,8 @@
 		<script src="/js/app/about/controller.js"></script>
 		<script src="/js/app/keystory/index.js"></script>
 		<script src="/js/app/keystory/controller.js"></script>
+		<script src="/js/app/grade5/index.js"></script>
+		<script src="/js/app/grade5/controller.js"></script>
 		
 		<script src="/js/app/main.js"></script>
 
