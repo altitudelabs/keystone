@@ -46,6 +46,10 @@ keystone.set('cloudinary config', {
   'api_secret': process.env.CLOUDINARY_APISECRET
 });
 
+
+// Port
+keystone.set('port', 8080);
+
 // Load your project's Models
 
 keystone.import('models');
