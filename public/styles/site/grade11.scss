@@ -1,0 +1,13 @@
+
+.grade-content {
+  .nav-tabs {
+    .icon {
+      &.test-prep {
+        @include background-contain-image($test-icon);
+      }
+      &.capstone {
+        @include background-contain-image($CAPstone-icon);
+      }
+    }
+  }
+}
