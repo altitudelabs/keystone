@@ -7,13 +7,14 @@ $logo-image-url: '../images/logo@2x.png';
   background: white;
   width: 100%;
   z-index: 1;
+  border-bottom: 1px solid $light-grey;
 }
 
 .nav-logo {
   @include background-contain-image($logo-image-url);
   display: inline-block;
   vertical-align: middle;
-  margin-left: 82px;
+  margin-left: 30px;
   height: $nav-height;
   width: 150px;
   @media (max-width: $tablet-width) {
@@ -22,7 +23,6 @@ $logo-image-url: '../images/logo@2x.png';
 }
 
 .nav-buttons {
-
   float: right;
   margin: 0;
   padding: 0 10px 0 0;
