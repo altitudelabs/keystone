@@ -4,10 +4,16 @@ App.Service.controller = {
 
   },
   initScrollDownButton: function() {
+    var selector;
+    if (App.isMobile()) {
+      selector = '.service-regular-programs';
+    } else {
+      selector = '.running-man';
+    }
     $('.scroll-down-button').on('click', function() {
       $('html, body').animate({
-        scrollTop: $('.running-man').offset().top - 70
-      }, 500);
+        scrollTop: $(selector).offset().top - 70
+      }, 1000);
     });
 
     this.initSwitchHero();
@@ -90,13 +96,16 @@ App.Service.controller = {
       relativePosition = manPosition - documentPosition;
 
       ratio = (-relativePosition/fullHeight) + 1;
-      if (ratio < 0 || ratio >1) {
-        return;
+
+      if (ratio < 0) {
+        $('.running-man').attr('src', '../images/runningdude1.png');
+
+      } else if (ratio >1) {
+        $('.running-man').attr('src', '../images/runningdude12.png');
       }
 
       e.preventDefault();
-      photoNumber = Math.floor(ratio * totalPhoto);
-
+      photoNumber = Math.ceil(ratio * totalPhoto);
       if (photoNumber > totalPhoto || photoNumber < 1) { return; }
       url = '../images/runningdude' + photoNumber + '.png';
       $('.running-man').attr('src', url);

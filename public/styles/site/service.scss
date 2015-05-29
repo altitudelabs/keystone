@@ -387,6 +387,10 @@
         position: absolute;
         top: 30%;
         width: 100%;
+        @media (max-width: $mobile-width) {
+          top: 20%;
+        }
+
         .title {
           color: white;
           display: block;

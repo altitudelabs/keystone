@@ -9,7 +9,9 @@ App.Bootcamp.controller = {
     var photos = [
       '../heros/bootcamp.jpg',
       '../heros/bootcamp1.jpg',
-      '../heros/bootcamp2.jpg'
+      '../heros/bootcamp2.jpg',
+      '../heros/bootcamp3.jpg',
+      '../heros/bootcamp4.jpg'
     ];
     var count = 0;
 
