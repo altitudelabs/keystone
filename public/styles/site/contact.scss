@@ -65,8 +65,12 @@
       padding-bottom: 70px;
     }
 
-    .title {
+    > .title {
       color: black;
+      @media (max-width: $tablet-width) {
+        margin-left: -17px;
+      }
+
     }
     .title-icon {
       @include background-contain-image($contact-pin);
@@ -75,7 +79,7 @@
       height: 25px;
       display: inline-block;
       @media (max-width: $tablet-width) {
-        margin: 0 7px 0 0;
+        margin: -2.5px 7px 0 0;
 
       }
     }
@@ -98,6 +102,10 @@
 
   .address {
     padding-top: 30px;
+    @media (max-width: $tablet-width) {
+      padding-top: 20px;
+
+    }
     .title {
       color: $main-red;
       font-size: 18px;
@@ -117,11 +125,20 @@
       line-height: 40px;
       text-align: center;
       border: 1px solid $main-red;
-      border-radius: 10px;
+
+      border-radius: 7px;
       color: white;
       background-color: $main-red;
       font-weight: bold;
       display: inline-block;
+      @media (max-width: $tablet-width) {
+        margin-top: 12px;
+      }
+
+    }
+
+    .mobile-separator {
+
     }
   }
   
@@ -134,22 +151,34 @@
       padding-left: 10px;
     }
   }
-  .phone {
-    padding-top: 40px;
-  }
-  .email {
-    .text {
-      color: $main-red;
-      /*font-weight: bold;*/
 
+  .contact {
+    padding-top: 40px;
+    @media (max-width: $tablet-width) {
+      padding-top: 20px;
+    }
+    .phone {
+      /*padding-top: 40px;*/
+    }
+    .email {
+      .text {
+        color: $main-red;
+        /*font-weight: bold;*/
+
+      }
     }
   }
 
   .opening-hours {
     padding-top: 40px;
+    @media (max-width: $tablet-width) {
+      padding-top: 20px;
+    }
     .title {
       font-size: 18px;
       color: $main-red;
+      font-weight: bold;
+
     }
     .weekday {
       margin-top: 10px;

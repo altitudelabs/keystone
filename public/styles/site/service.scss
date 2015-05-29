@@ -60,7 +60,18 @@
 }
 
 
-
+.timeline-section {
+  .diagram {
+    /*padding-left: 5%;*/
+    /*padding-right: 5%;*/
+    width: 100%;
+  }
+  .underline {
+    height: 1px;
+    width: 100%;
+    background-color: $main-red;
+  }
+}
 .service-regular-programs {
   a:hover {
     text-decoration: none;
@@ -69,6 +80,11 @@
   .grade-5,
   .grade-8,
   .grade-11 {
+    & * {
+      @include transition();
+    }
+    @include transition();
+    
     .title {
       text-align: center;
       padding-top: 100px;
@@ -82,6 +98,7 @@
         font-size: 25px;
       }
       .underline {
+
         width: 30px;
         background: $main-red;
         height: 2px;
@@ -99,12 +116,14 @@
 
       sup {
         color: $main-red;
+
         font-size: 30px;
         vertical-align: top;
         line-height: 65px;
       }
     }
     .course-list {
+
       width: 100%;
       position: relative;
       margin-top: 80px;
@@ -124,16 +143,24 @@
         position: absolute;
         top: 0px;
         left: 50%;
+        margin-left: -1px;
         @media (max-width: $mobile-width) {
           display: none;
         }
-
       }
+      
     }
     .course-item {
+      &:not(:first-child) {
+        margin-left: -4px;
+
+        /*border-left: 1px solid $main-red;*/
+      }
+
       height: 100%;
       vertical-align: top;
-      width: 49%;
+      width: 50%;
+
       display: inline-block;
       padding-bottom: 60px;
       @media (max-width: $mobile-width) {
@@ -167,9 +194,11 @@
       &.capstone {
         @include background-contain-image($CAPstone-icon);
       }
+
     }
     .course-title {
       padding-top: 50px;
+      padding: 50px 15px 0 15px;
       font-size: 16px;
       @media (max-width: $mobile-width) {
         font-size: 14px;
@@ -221,7 +250,7 @@
           background-color: white;
         }
        
-        .cornerstone {
+       /* .cornerstone {
           @include background-contain-image($cornerstone-icon-hover);
         }
         .BAP {
@@ -239,7 +268,7 @@
         }
         .capstone {
           @include background-contain-image($CAPstone-icon-hover);
-        }
+        }*/
         .course-title {
           .category {
             color: white;
@@ -284,6 +313,7 @@
   }
 
   .content {
+
     .bootcamp {
       @include background-cover-image($bootcamp-main-url);
     }
@@ -292,12 +322,16 @@
     }
     .bootcamp,
     .snapshot {
+      & * {
+        @include transition();
+      }
+      @include transition();
+      
       height: 40vh;
       min-height: 300px;
       position: relative;
       cursor: pointer;
       .overlay {
-        @include transition();
 
         height: 100%;
         width: 100%;
@@ -329,7 +363,6 @@
           padding: 0 15% 0 15%;
         }
         .more-button {
-          @include transition();
 
           font-size: 18px;
           font-weight: bold;

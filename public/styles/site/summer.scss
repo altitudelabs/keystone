@@ -1,6 +1,6 @@
 
 .summer-main {
-  /*@include background-cover-image();*/
+  @include background-cover-image($summer-main-url);
   height: 40%;
   min-height: 300px;
 
@@ -9,6 +9,29 @@
     position: absolute;
     width: 100%;
     bottom: 30px;
+  }
+  
+  .scroll-down-button {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    padding: 18px;
+    bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    border: 2px white solid;
+    cursor: pointer;
+
+    &:hover { 
+
+    }
+    div {
+      width: 100%;
+      height: 100%;
+      @include background-contain-image($arrow-down);
+
+    }
   }
 }
 .summer-main-text {
@@ -33,3 +56,4 @@
     }
   }
 }
+

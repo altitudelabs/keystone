@@ -18,7 +18,14 @@ App.Career.controller = {
 
   initSwitchHero: function() {
     console.log('initSwitchHero');
-    var photos = ['../images/career-introduction@2x.png', '../heros/career.jpg'];
+    var photos = ['../images/career-introduction@2x.png',
+      '../heros/career.jpg',
+      '../heros/career1.jpg',
+      '../heros/career2.jpg',
+      '../heros/career3.jpg',
+      '../heros/career4.jpg'
+
+    ];
     var count = 0;
 
     $('.career-main').on('click', function() {

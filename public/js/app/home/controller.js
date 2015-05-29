@@ -48,7 +48,11 @@ App.Home.controller = {
   },
 
   initSwitchHero: function() {
-    var photos = ['../images/home-hero@1x.png', '../heros/home.jpg', '../heros/home2.jpg'];
+    var photos = ['../images/home-hero@1x.png',
+      '../heros/home3.jpg',
+      '../heros/home4.jpg',
+      '../heros/home5.jpg'
+    ];
     var count = 0;
 
     $('.home-main').on('click', function() {

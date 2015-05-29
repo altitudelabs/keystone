@@ -15,7 +15,13 @@ App.Snapshot.controller = {
 
   initSwitchHero: function() {
     console.log('initSwitchHero');
-    var photos = ['../images/snapshot@2x.png', '../heros/snapshot.jpg', '../heros/snapshot2.jpg'];
+    var photos = [
+      '../heros/snapshot.jpg',
+      '../heros/snapshot2.jpg',
+      '../heros/snapshot3.jpg',
+      '../heros/snapshot4.jpg',
+      '../heros/snapshot5.jpg'
+    ];
     var count = 0;
 
     $('.snapshot-main').on('click', function() {

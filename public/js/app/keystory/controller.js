@@ -15,11 +15,15 @@ App.Keystory.controller = {
   },
 
   initSwitchHero: function() {
-    console.log('initSwitchHero');
-    var photos = ['../images/keystory-introduction@1x.png'];
+    var photos = [
+      '../heros/keystory.jpg',
+      '../heros/keystory1.jpg',
+      '../heros/keystory2.jpg',
+      '../heros/keystory3.jpg'
+    ];
     var count = 0;
 
-    $('.service-main').on('click', function() {
+    $('.keystory-main').on('click', function() {
       console.log(count);
       count++;
       if (count === photos.length) { count = 0; }
