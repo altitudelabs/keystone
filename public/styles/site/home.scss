@@ -4,6 +4,10 @@
   height: 80%;
   min-height: 500px;
   position: relative;
+  @media (max-width: $mobile-width) {
+    height: 60%;
+    min-height: 400px;
+  }
   
 }
 
@@ -38,9 +42,37 @@
 
 
 .home-carousel {
+  position: relative;
   & .bx-controls.bx-has-controls-direction {
     display: none;
   }
+
+  .control-left, .control-right {
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    cursor: pointer;
+  }
+
+
+  .control-left {
+    left: 0;
+    @include background-contain-image($carousel-control-left);
+  }
+  .control-right {
+    right: 0;
+    @include background-contain-image($carousel-control-right);
+  }
+  /*
+  :*/
+  /*
+<div class="control-left"></div>    
+<div class="control-right"></div>   */
 }
 
 .home-carousel-list {
@@ -74,6 +106,8 @@
     position: absolute;
     top: 0;
     left: 0;
+    @include transition();
+
   }
   &:hover {
     /*cursor: pointer;*/
@@ -106,13 +140,16 @@
     display: block;
     font-weight: bold;
     color: white;
-    margin-top: 50px;
+    margin-top: 100px;
     font-size: 30px;
+    @media (max-width: $mobile-width) {
+      margin-top: 50px;
+    }
   }
 
   & .sub {
     display: block;
-    margin-top: 8px;
+    margin-top: 0px;
     color: white;
     font-size: 15px;
     @media (max-width: $mobile-width) {
@@ -121,14 +158,16 @@
   }
 
   & .more-button {
-    font-size: 18px;
+    @include transition();
+
+    font-size: 15px;
     font-weight: bold;
     vertical-align: middle;
-    margin-top: 80px;
+    margin-top: 30px;
     color: white;
-    width: 120px;
-    line-height: 50px;
-    height: 50px;
+    width: 100px;
+    line-height: 40px;
+    height: 40px;
     border: 2px solid white;
     border-radius: 10px;
     margin-left: auto;
@@ -143,7 +182,8 @@
       line-height: 30px;
       border: 1px solid white;
       font-size: 14px;
-      font-weight: normal;
+      /*font-weight: normal;*/
+      border-radius: 6.5px;
 
       margin-top: 30px;
 

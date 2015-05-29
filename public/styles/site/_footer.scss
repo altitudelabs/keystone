@@ -23,46 +23,51 @@ $facebook-logo-url: '../images/footer-facebook.png';
   background: white;
   opacity: 0.5;
   height: 1px;
+  width: 70%;
+  max-width: 800px;
   
-  margin: 30px 15% 30px 15%;
-  @media (max-width: $mobile-width) {
+  margin: 30px auto 30px auto;
+/*  @media (max-width: $mobile-width) {
     margin: 5px 15% 5px 15%;
-
-  }
+  }*/
 
 }
 .footer-content {
   font-size: 12px;
-  margin: 0 17.5% 0 17.5%;
+  margin: 0 auto 0 auto;
+  width: 65%;
+  max-width: 730px;
   text-align: center;
-  @media (max-width: $mobile-width) {
+/*  @media (max-width: $mobile-width) {
     font-size: 10px;
     padding-top: 10px;
     margin: 0 10px 0 10px;
-  }
+  }*/
+  text-align: center;
   .copyright {
-    float: left;
     color: white;
+    
+
   }
 
   .contact,
   .privacy {
     color: white;
     margin: 0 7px 0 7px;
-    @media (max-width: $mobile-width) {
+/*    @media (max-width: $mobile-width) {
       margin: 0 2px 0 2px;
-    }
+    }*/
   }
 
   .sns {
     float: right;
     padding-top: 5px;
-    @media (max-width: $mobile-width) {
+/*    @media (max-width: $mobile-width) {
       float: none;
       margin: auto;
       padding-top: 5px;
       padding-bottom: 15px;
-    }
+    }*/
 
     .icon {
       display: inline-block;

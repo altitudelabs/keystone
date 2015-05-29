@@ -1,0 +1,35 @@
+
+.summer-main {
+  /*@include background-cover-image();*/
+  height: 40%;
+  min-height: 300px;
+
+  position: relative;
+  .scroll-down-container {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+  }
+}
+.summer-main-text {
+  color: white;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+
+  .title {
+    font-weight: bold;
+    font-size: 80px;
+    @media (max-width: $mobile-width) {
+      font-size: 30px;
+    }
+  }
+  .sub {
+    font-size: 40px;
+    font-weight: lighter;
+    @media (max-width: $mobile-width) {
+      font-size: 20px;
+    }
+  }
+}

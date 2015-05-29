@@ -2,7 +2,10 @@
   @include background-cover-image($keystory-main-url);
   height: 85%;
   min-height: 500px;
-  
+  @media (max-width: $mobile-width) {
+    height: 60%;
+    min-height: 400px;
+  }
   position: relative;
   .scroll-down-container {
     position: absolute;

@@ -1,0 +1,52 @@
+
+.snapshot-main {
+  @include background-cover-image($snapshot-main-url);
+  height: 35%;
+  min-height: 250px;
+  position: relative;
+  @media (max-width: $mobile-width) {
+    height: 150px;
+    min-height: none;
+  }
+  .scroll-down-container {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $main-red;
+    opacity: 0.7;
+  }
+}
+.snapshot-main-text {
+  color: white;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+
+  .title {
+    font-weight: bold;
+    font-size: 60px;
+    @media (max-width: $mobile-width) {
+      font-size: 30px;
+    }
+  }
+  .sub {
+    font-size: 40px;
+    font-weight: lighter;
+    @media (max-width: $mobile-width) {
+      font-size: 20px;
+    }
+  }
+  
+
+
+
+}

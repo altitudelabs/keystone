@@ -43,6 +43,10 @@ exports = module.exports = function(app) {
 	app.get('/blog/:category?', routes.views.blog);
 	app.get('/blog/post/:post', routes.views.post);
 	app.get('/contact', routes.views.contact);
+	
+	app.get('/bootcamp', routes.views.bootcamp);
+	app.get('/snapshot', routes.views.snapshot);
+	app.get('/summer', routes.views.summer);
 
 
 

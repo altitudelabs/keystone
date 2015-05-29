@@ -47,13 +47,13 @@ a {
   -ms-transition: $type $duration $style;
   -o-transition: $type $duration $style;
   transition: $type $duration $style;
-  @media (max-width: $mobile-width) {
+/*  @media (max-width: $mobile-width) {
     -webkit-transition: none;
     -moz-transition: none;
     -ms-transition: none;
     -o-transition: none;
     transition: none;
-  }
+  }*/
 }
 
 /* font - HelveticaNeueLTStd
@@ -226,4 +226,69 @@ a {
   transition: none;
 }*/
 
+
+
+.text-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  max-width: 1000px;
+  padding: 80px 0 50px 0;
+  @media (max-width: $mobile-width) {
+    padding: 40px 0 50px 0;
+    width: 80%;
+    min-width: 280px;
+  }
+
+
+  h1, h2, h4, h6 {
+    font-weight: bold;
+  }
+
+  h1 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  /*h2:not(:first-child) {
+    margin-top: 40px;
+
+  }*/
+  /*h6 {
+    padding-left: 10px;
+  }
+*/
+  .paragraph {
+    padding-bottom: 30px;
+  }
+  .diagram {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 70px;
+    width: 60%;
+    @media (max-width: $mobile-width) {
+      margin-top: 20px;
+      width: 80%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+    
+  }
+
+  .no-padding {
+    padding: 0 0 0 0;
+  }
+
+  ul {
+    margin-bottom: 20px;
+  }
+}
 

@@ -3,6 +3,10 @@
   @include background-cover-image($career-main-url);
   height: 85%;
   min-height: 500px;
+  @media (max-width: $mobile-width) {
+    height: 60%;
+    min-height: 400px;
+  }
   
   position: relative;
   .scroll-down-container {
@@ -100,6 +104,12 @@
       height: 30px;
       @include background-contain-image($career-plus);
     }
+  }
+}
+
+.career-content {
+  h4 {
+    margin-bottom: 30px;
   }
 }
 /*

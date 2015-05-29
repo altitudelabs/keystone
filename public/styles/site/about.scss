@@ -4,6 +4,10 @@ $section-title-font-size: 40px;
   @include background-cover-image($about-main-url);
   height: 85%;
   min-height: 500px;
+  @media (max-width: $mobile-width) {
+    height: 60%;
+    min-height: 400px;
+  }
 
   position: relative;
   .scroll-down-container {

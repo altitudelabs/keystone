@@ -3,7 +3,10 @@
   @include background-cover-image($service-main-url);
   height: 85%;
   min-height: 500px;
-  
+  @media (max-width: $mobile-width) {
+    height: 60%;
+    min-height: 400px;
+  }
   position: relative;
   .scroll-down-container {
     position: absolute;
@@ -294,13 +297,15 @@
       position: relative;
       cursor: pointer;
       .overlay {
+        @include transition();
+
         height: 100%;
         width: 100%;
         position: absolute;
         top: 0;
         left: 0;
         background: black;
-        opacity: 0.35;
+        opacity: 0.5;
       }
 
       .content {
@@ -321,8 +326,11 @@
           color: white;
           margin-top: 8px;
           font-size: 15px;
+          padding: 0 15% 0 15%;
         }
         .more-button {
+          @include transition();
+
           font-size: 18px;
           font-weight: bold;
           vertical-align: middle;
@@ -344,7 +352,9 @@
         }
       }
 
+
       &:hover {
+
         .overlay {
           background: $main-red;
           opacity: 0.8;

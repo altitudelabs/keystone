@@ -1,13 +1,12 @@
 
 .grade-main {
   /*@include background-cover-image($service-main-url);*/
-  height: 200px;
+  height: 230px;
   /*min-height: 500px;*/
   background-color: $main-red;
   position: relative;
   @media (max-width: $mobile-width) {
     height: 150px;
-
   }
 
 }
@@ -15,7 +14,7 @@
 .grade-main-text {
   color: white;
   position: absolute;
-  top: 50px;
+  top: 60px;
   width: 100%;
   text-align: center;
   @media (max-width: $mobile-width) {
@@ -171,50 +170,83 @@
 
 
   .tab-content {
-    .text-content {
-      margin-left: auto;
-      margin-right: auto;
-      width: 60%;
-      max-width: 1000px;
-      padding: 80px 0 50px 0;
-      @media (max-width: $mobile-width) {
-        width: 80%;
-        min-width: 300px;
-      }
+    
+  }
+
+}
 
 
-      h1, h2, h6 {
-        font-weight: bold;
-      }
 
-      h1 {
-        margin-top: 25px;
-        margin-bottom: 15px;
-      }
 
-      h2 {
-        margin-top: 40px;
-        margin-bottom: 20px;
-      }
-      /*h2:not(:first-child) {
-        margin-top: 40px;
-
-      }*/
-      /*h6 {
-        padding-left: 10px;
-      }
-*/
-      .paragraph {
-        padding-bottom: 30px;
-      }
-
-      .no-padding {
-        padding: 0 0 0 0;
-      }
-
-      ul {
-        margin-bottom: 20px;
-      }
+.sub-nav {
+  .sub-nav-container {
+    width: 70%;
+    max-width: 1000px;
+    /*padding: 80px 0 0 0;*/
+    margin: auto;
+    height: 150px;
+    position: relative;
+    @media (max-width: $tablet-width) {
+      display: none;
+      /*width: 90%;*/
+      /*min-width: 280px;*/
     }
   }
+
+  .sub-nav-button {
+    width: 33%;
+    float: left;
+    display: inline-block;
+    height: 100%;
+    background-color: $light-grey;
+    padding-top: 40px;
+    @include transition();
+    .content {
+      text-align: center;
+      color: $main-red;
+
+      .grade-text {
+        font-size: 10px;
+        font-weight: bold;
+      }
+      .underline {
+        width: 12px;
+        background-color: $main-red;
+        margin: auto;
+        height: 1px;
+        margin-bottom: 10px;
+      }
+
+      .grade-number {
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+    &:hover, &.active {
+      background-color: $main-red;
+      .content {
+        color: white;
+        .underline {
+          background-color: white;
+        }
+      }
+    }
+
+  }
+
 }
+
+/*
+<section class="sub-nav">
+  <div class="sub-nav-container">
+    <div class="sub-nav-button">
+      <div class="content">
+        <span class="grade-text">Grades</span>
+        <div class="underline"></div>
+        <span class="grade-number">5<sup>th</sup> - 8<sup>th</sup></span>
+      </div>
+    </div>
+    <div class="sub-nav-button"></div>
+    <div class="sub-nav-button"></div>
+  </div>
+</section>*/
