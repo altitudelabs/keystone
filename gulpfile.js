@@ -23,11 +23,12 @@ var gulp = require('./gulp/index.js')([
   // 'resources'
 ]);
 
-// // Default Task
-gulp.task('default', function() {
+// Default Task
+gulp.task('build', function() {
 	runSequence(
-		'serve',
-		'watch'
+		'clean',
+    'sass',
+    'nodemon'
 	);
 });
 
@@ -37,15 +38,13 @@ gulp.task('production', function() {
 		'watch-production'
 	);
 });
-// gulp.task('default', function (cb) {
-//   runSequence(
-//     'clean',
-//     ['sass', 'browserify'],
-//     ['uglify', 'minify-html', 'minify-css'],
-//     'watch',
-//     cb
-//   );
-// });
+gulp.task('default', function (cb) {
+  runSequence(
+    'serve',
+    'watch',
+    cb
+  );
+});
 
 // gulp.task('dev', ['watch', 'connect']);
 

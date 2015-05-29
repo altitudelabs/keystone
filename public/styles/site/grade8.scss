@@ -1,0 +1,17 @@
+
+.grade-content {
+  .nav-tabs {
+    .icon {
+      &.enrichment {
+        @include background-contain-image($enrichment-icon);
+      }
+      &.milestone {
+        @include background-contain-image($milestone-icon);
+      }
+    }
+  }
+}
+
+
+
+/*$enrichment-illustration: ''*/

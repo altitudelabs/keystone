@@ -42,7 +42,49 @@ exports = module.exports = function(app) {
 	app.get('/career', routes.views.career);
 	app.get('/blog/:category?', routes.views.blog);
 	app.get('/blog/post/:post', routes.views.post);
-	app.all('/contact', routes.views.contact);
+	app.get('/contact', routes.views.contact);
+
+
+
+
+
+
+
+
+	var mandrill = require('mandrill-api/mandrill');
+	var mandrill_client = new mandrill.Mandrill('P-bgB48rdC27M_ulDMvSyg');
+	app.post('/contact', function(req, res) {
+
+
+		var message = {};
+
+		message.text = req.body.message;
+		message.from_email = req.body.email;
+		message.subject = 'sentFromGod';
+		message.to = [{ 
+			email: 'victorli@altitudelabs.com',
+			name: req.body['name.full'],
+			type: 'to'
+		}];
+
+		mandrill_client.messages.send({
+			message: message,
+			async: false,
+			ip_pool: 'Main Pool'
+
+		}, function(result) {
+			console.log('result', result);
+			if (result[0].status === 'sent') {
+				console.log('success!!!!');
+				res.sendStatus(304);
+			} 
+
+		}, function (e) {
+			console.log('mandril error', e.name, ' - ', e.message);
+			res.sendStatus(400, e);
+		});
+	});
+
 	
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);

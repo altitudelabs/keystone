@@ -63,8 +63,8 @@
     text-decoration: none;
   }
 
-  .grade-6,
-  .grade-9,
+  .grade-5,
+  .grade-8,
   .grade-11 {
     .title {
       text-align: center;
@@ -92,6 +92,13 @@
         @media (max-width: $mobile-width) {
           font-size: 40px;
         }
+      }
+
+      sup {
+        color: $main-red;
+        font-size: 30px;
+        vertical-align: top;
+        line-height: 65px;
       }
     }
     .course-list {
@@ -195,7 +202,7 @@
       @media (min-width: $mobile-width) {
         background: $main-red;
         .title {
-          span {
+          span, sup {
             color: white;
           }
           .underline {

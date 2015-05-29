@@ -66,3 +66,16 @@ App.Util = {
     console.log(controllerName, action);
   }
 };
+
+App.Helpers = {
+  showAlert: function(type, message) {
+    var selector = '.alert-message .alert-' + type;
+    if (message) {
+      $(selector).innerHTML(message);
+    }
+    $(selector).css('display', 'block');
+    setTimeout(function () {
+      $(selector).css('display', 'none');
+    }, 10000);
+  }
+};

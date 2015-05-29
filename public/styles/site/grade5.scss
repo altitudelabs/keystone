@@ -1,0 +1,13 @@
+
+.grade-content {
+  .nav-tabs {
+    .icon {
+      &.cornerstone {
+        @include background-contain-image($cornerstone-icon);
+      }
+      &.BAP {
+        @include background-contain-image($bap-icon);
+      }
+    }
+  }
+}
