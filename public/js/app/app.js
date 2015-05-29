@@ -4,6 +4,9 @@ var App = {
   events: {},
   init: function() {
     App.Util.init();
+    $('.alert-message').on('click', function() {
+      $(this).hide();
+    });
   },
   isMobile: function() {
     return window.innerWidth < 900;
@@ -73,8 +76,11 @@ App.Helpers = {
     if (message) {
       $(selector).innerHTML(message);
     }
+    $('.alert-message').css('display', 'block');
     $(selector).css('display', 'block');
     setTimeout(function () {
+      $('.alert-message').css('display', 'none');
+
       $(selector).css('display', 'none');
     }, 10000);
   }

@@ -25,7 +25,8 @@ App.Contact.controller = {
         type: 'POST',
         url: '/contact',
         data: data,
-        success: function() {
+        success: function(a, b) {
+          $('.contact-form form')[0].reset();
           App.Helpers.showAlert('success');
         },
         error: function(err) {

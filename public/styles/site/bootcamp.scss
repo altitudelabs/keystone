@@ -1,7 +1,7 @@
 
 .bootcamp-main {
   @include background-cover-image($bootcamp-main-url);
-  height: 35%;
+  height: 50%;
   min-height: 250px;
   position: relative;
   @media (max-width: $mobile-width) {

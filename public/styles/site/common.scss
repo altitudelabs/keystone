@@ -202,22 +202,57 @@ a {
 }
 
 .alert-message {
+  text-align: center;
   width: 100%;
   position: fixed;
-  top: 10%;
   left: 0;
+  top: 0;
+  height: 100%;
   z-index: 999999999;
+  background-color: rgba(0,0,0,.4);
+  display: none;
 }
 .alert-message .alert-success,
 .alert-message .alert-info,
 .alert-message .alert-danger {
+  position: absolute;
+  width: 25%;
+  max-width: 450px;
+  min-width: 250px;
+  top: 40%;
+  left: 0;
+  right: 0;
   border: solid 1px;
   border-radius: 0px;
-  width: 80%;
   margin-left: auto;
   margin-right: auto;
   text-align: middle;
   display: none;
+  background-color: white;
+  border-radius: 8px;
+  border: 0;
+  h1 {
+    margin-top: 20px;
+    color: $main-red;
+    font-weight: bold;
+  }
+
+  .underline {
+    width: 60px;
+    height: 2px;
+    margin: auto;
+    background: $main-red;
+    margin-bottom: 20px;
+  }
+
+  span {
+    font-size: 16px;
+    color: $main-grey;
+  }
+  padding: 30px 0px 50px 0px;
+}
+.alert-message .alert-success {
+  /*display: block;*/
 }
 
 /*input:-webkit-autofill, input:-webkit-autofill:focus {

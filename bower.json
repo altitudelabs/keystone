@@ -17,6 +17,7 @@
     "dw-bxslider-4": "~4.2.3"
   },
   "devDependencies": {
-    "bootstrap": "~3.3.4"
+    "bootstrap": "~3.3.4",
+    "parallax": "~2.1.3"
   }
 }

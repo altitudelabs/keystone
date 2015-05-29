@@ -17,10 +17,11 @@ App.Snapshot.controller = {
     console.log('initSwitchHero');
     var photos = [
       '../heros/snapshot.jpg',
-      '../heros/snapshot2.jpg',
-      '../heros/snapshot3.jpg',
-      '../heros/snapshot4.jpg',
-      '../heros/snapshot5.jpg'
+      '../heros/snapshot1.jpg',
+      // '../heros/snapshot2.jpg',
+      // '../heros/snapshot3.jpg',
+      '../heros/snapshot4.jpg'
+      // '../heros/snapshot5.jpg'
     ];
     var count = 0;
 

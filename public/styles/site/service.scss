@@ -66,6 +66,9 @@
     /*padding-right: 5%;*/
     width: 100%;
   }
+  .running-man {
+    width: 100%;
+  }
   .underline {
     height: 1px;
     width: 100%;
@@ -75,6 +78,9 @@
 .service-regular-programs {
   a:hover {
     text-decoration: none;
+  }
+  .grade-5, .grade-11 {
+    background-color: $light-grey;
   }
 
   .grade-5,
@@ -295,7 +301,7 @@
   .special-programs-title {
     padding-top: 50px;
     padding-bottom: 30px;
-    background: $light-grey;
+    /*background: $light-grey;*/
     .underline {
       height: 2px;
       width: 20px;
@@ -327,7 +333,7 @@
       }
       @include transition();
       
-      height: 40vh;
+      height: 45vh;
       min-height: 300px;
       position: relative;
       cursor: pointer;
@@ -349,7 +355,7 @@
         .title {
           color: white;
           display: block;
-          font-size: 30px;
+          font-size: 32px;
           font-weight: bold;
           @media (max-width: $mobile-width) {
             font-size: 20px;

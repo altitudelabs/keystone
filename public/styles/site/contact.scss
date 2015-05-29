@@ -44,7 +44,7 @@
   padding-bottom: 100px;
   padding-top: 50px;
   .container {
-    width: 80%;
+    /*width: 80%;*/
     margin: auto;
     max-width: 1280px;
     
@@ -74,7 +74,7 @@
     }
     .title-icon {
       @include background-contain-image($contact-pin);
-      margin: 0 15px 0 0;
+      margin: -2.5px 15px 0 0;
       width: 25px;
       height: 25px;
       display: inline-block;
@@ -89,7 +89,6 @@
       vertical-align: top;
       font-size: 30px;
       font-weight: bold;
-
     }
   }
   .detail-container {
@@ -146,9 +145,12 @@
     .icon {
       font-weight: bold;
       text-transform: uppercase;
+      /*@media (max-width: $tablet-width) {*/
+      display: none;
+      /*}*/
     }
     .text {
-      padding-left: 10px;
+
     }
   }
 
