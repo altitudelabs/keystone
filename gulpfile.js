@@ -27,8 +27,7 @@ var gulp = require('./gulp/index.js')([
 gulp.task('build', function() {
 	runSequence(
 		'clean',
-    'sass',
-    'nodemon'
+    'sass'
 	);
 });
 
