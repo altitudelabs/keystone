@@ -47,7 +47,7 @@ a {
   -ms-transition: $type $duration $style;
   -o-transition: $type $duration $style;
   transition: $type $duration $style;
-  
+
 }
 
 /* font - HelveticaNeueLTStd
@@ -141,16 +141,16 @@ a {
        color: white;
     }
     :-moz-placeholder { /* Firefox 18- */
-       color: white;  
+       color: white;
     }
     ::-moz-placeholder {  /* Firefox 19+ */
-       color: white;  
+       color: white;
     }
-    :-ms-input-placeholder {  
-       color: white;  
+    :-ms-input-placeholder {
+       color: white;
     }
 
-    
+
   }
   button.send {
     width: 180px;
@@ -163,4 +163,30 @@ a {
     background: transparent;
     border: 2px solid white;
   }
+}
+
+
+
+
+
+/* Error Messages */
+#mce-responses {
+  .response {
+    position: fixed;
+    border: 1px solid black;
+    color: black;
+    width: 70%;
+    margin: auto;
+    min-width: 300px;
+    height: 200px;
+    top: 20%;
+    text-align: center;
+    &#mce-success-response {
+      background-color: green;
+    }
+    &#mce-error-response {
+      background-color: red;
+    }
+  }
+
 }

@@ -24,9 +24,9 @@ Job.add({
   categories: { type: Types.Relationship, ref: 'PostCategory', many: true }
 });
 
-Post.schema.virtual('content.full').get(function() {
+Job.schema.virtual('content.full').get(function() {
   return this.content.extended || this.content.brief;
 });
 
-Post.defaultColumns = 'title, state|20%, author|20%, publishedDate|20%';
-Post.register();
+Job.defaultColumns = 'title, state|20%, author|20%, publishedDate|20%';
+Job.register();
