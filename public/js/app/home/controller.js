@@ -49,6 +49,8 @@ App.Home.controller = {
 
   initSwitchHero: function() {
     var photos = ['../images/home-hero@1x.png',
+      '../heros/home1.jpg',
+      '../heros/home2.jpg',
       '../heros/home3.jpg',
       '../heros/home4.jpg',
       '../heros/home5.jpg'
