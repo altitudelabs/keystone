@@ -1,4 +1,8 @@
 .keystory-main {
+  & * {
+
+    @include transition();
+  }
   @include background-cover-image($keystory-main-url);
   height: 85%;
   min-height: 500px;
@@ -34,13 +38,21 @@
 
     }
   }
+
+   
 }
 
 .keystory-main-text {
+  overflow-x: hidden;
+
   color: white;
   position: absolute;
   top: 35%;
-  width: 100%;
+  width: 74%;
+  min-width: 250px;
+  left: 0;
+  right: 0;
+  margin: auto;
   text-align: center;
 
   .title {
@@ -56,6 +68,9 @@
     @media (max-width: $mobile-width) {
       font-size: 20px;
     }
+  }
+  h3 {
+    margin-top: 30px;
   }
 }
 
