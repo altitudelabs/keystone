@@ -89,9 +89,13 @@ $logo-image-url: '../images/logo@2x.png';
     top: 0;
   }
   &.active span:before {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
   &.active span:after {
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    -webkit-transform: translateY(-10px) rotate(-45deg);
     transform: translateY(-10px) rotate(-45deg);
     top: 10px;
   }
