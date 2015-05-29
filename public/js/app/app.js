@@ -7,6 +7,10 @@ var App = {
     $('.alert-message').on('click', function() {
       $(this).hide();
     });
+    if (location.pathname !== '/') {
+      $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+    }
+
   },
   isMobile: function() {
     return window.innerWidth < 900;
