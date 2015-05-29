@@ -65,9 +65,16 @@
     /*padding-left: 5%;*/
     /*padding-right: 5%;*/
     width: 100%;
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
   }
   .running-man {
     width: 100%;
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+
   }
   .underline {
     height: 1px;

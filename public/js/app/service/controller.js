@@ -58,6 +58,9 @@ App.Service.controller = {
   },
 
   initRunningMan: function() {
+    if (App.isMobile()) {
+      return;
+    }
     console.log('hh');
     $('.running-man').attr('src', '../images/runningdude1.png');
 
