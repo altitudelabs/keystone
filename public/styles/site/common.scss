@@ -47,9 +47,6 @@ a {
   -ms-transition: $type $duration $style;
   -o-transition: $type $duration $style;
   transition: $type $duration $style;
-<<<<<<< HEAD
-
-=======
   @media (max-width: $mobile-width) {
     -webkit-transition: none;
     -moz-transition: none;
@@ -57,7 +54,6 @@ a {
     -o-transition: none;
     transition: none;
   }
->>>>>>> 2b410e68d9d8fd56eea07bd996309514530ba7d5
 }
 
 /* font - HelveticaNeueLTStd
@@ -181,22 +177,25 @@ a {
 
 
 /* Error Messages */
+
 #mce-responses {
   .response {
-    position: fixed;
-    border: 1px solid black;
-    color: black;
+    /* position: fixed; */
+    /* border: 1px solid black; */
+    color: white;
+    font-size: 18px;
     width: 70%;
     margin: auto;
-    min-width: 300px;
-    height: 200px;
+    /* min-width: 300px; */
+    height: 77px;
     top: 20%;
     text-align: center;
+    
     &#mce-success-response {
-      background-color: green;
+      /*background-color: green;*/
     }
     &#mce-error-response {
-      background-color: red;
+      /*background-color: red;*/
     }
   }
 
