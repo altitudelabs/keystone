@@ -87,11 +87,11 @@
     text-decoration: none;
   }
   @media (max-width: $mobile-width) {
-    & > a {
+/*    & > a {
       pointer-events: none;
       cursor: default;
       
-    }
+    }*/
   }  
   .grade-5, .grade-11 {
     background-color: $light-grey;
@@ -322,13 +322,18 @@
       }
 
     }
-  }
+  }/*
   .mobile-more {
     margin-top: 10px;
     color: $main-red;
-    /*line-height: 18px;*/
     text-decoration: underline;
-  }
+    display: none;
+      
+    @media (max-width: $mobile-width) {
+      display: inline-block;
+    }
+
+  }*/
 }
 
 .service-special-programs {
