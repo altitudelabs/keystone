@@ -5,7 +5,7 @@ App.About.controller = {
   },
   initScrollDownButton: function() {
     console.log('init');
-    $('.scroll-down-button').on('click', function() {
+    $('.scroll-down-button').on('click', function(e) {
       $('html, body').animate({
         scrollTop: $('.about-history').offset().top - 70
       }, 1000);
