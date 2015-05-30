@@ -14,7 +14,6 @@ App.Summer.controller = {
     var count = 0;
 
     $('.summer-main').on('click', function() {
-      console.log(count);
       count++;
       if (count === photos.length) { count = 0; }
       $(this).css('background-image', 'url(' + photos[count] + ')');

@@ -70,7 +70,6 @@ App.Util = {
       App[controllerName].controller[action]();
     }
     
-    console.log(controllerName, action);
   }
 };
 

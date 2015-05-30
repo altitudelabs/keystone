@@ -4,7 +4,6 @@ App.About.controller = {
 
   },
   initScrollDownButton: function() {
-    console.log('init');
     $('.scroll-down-button').on('click', function(e) {
       $('html, body').animate({
         scrollTop: $('.about-history').offset().top - 70
@@ -15,7 +14,6 @@ App.About.controller = {
   },
 
   initSwitchHero: function() {
-    console.log('initSwitchHero');
     var photos = ['../images/about-introduction@2x.png',
       '../heros/about.jpg',
       '../heros/about2.jpg',
@@ -27,7 +25,6 @@ App.About.controller = {
     var count = 0;
 
     $('.about-main').on('click', function() {
-      console.log(count);
       count++;
       if (count === photos.length) { count = 0; }
       $(this).css('background-image', 'url(' + photos[count] + ')');
@@ -39,7 +36,6 @@ App.About.controller = {
 
     ];
     var count = 0;
-    console.log(photos.length);
 
     $('.enrichment .diagram').on('click', function() {
       count++;

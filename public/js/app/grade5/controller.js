@@ -4,12 +4,10 @@ App.Grade5.controller = {
 
   },
   initTabs: function() {
-    console.log('init');
     $('#myTab a').click(function (e) {
       // e.preventDefault();
       // $(this).tab('show');
     });
-    console.log(location.hash);
     var hash = location.hash;
     if (hash.length > 0) {
       var $myTab = $(hash);

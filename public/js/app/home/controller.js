@@ -58,7 +58,6 @@ App.Home.controller = {
     var count = 0;
 
     $('.home-main').on('click', function() {
-      console.log(count);
       count++;
       if (count === photos.length) { count = 0; }
       $('.home-main').css('background-image', 'url(' + photos[count] + ')');

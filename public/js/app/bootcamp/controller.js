@@ -5,7 +5,6 @@ App.Bootcamp.controller = {
   },
 
   initSwitchHero: function() {
-    console.log('initSwitchHero');
     var photos = [
       '../heros/bootcamp.jpg',
       '../heros/bootcamp1.jpg',
@@ -16,7 +15,6 @@ App.Bootcamp.controller = {
     var count = 0;
 
     $('.bootcamp-main').on('click', function() {
-      console.log(count);
       count++;
       if (count === photos.length) { count = 0; }
       $(this).css('background-image', 'url(' + photos[count] + ')');
@@ -28,7 +26,6 @@ App.Bootcamp.controller = {
 
     ];
     var count = 0;
-    console.log(photos.length);
 
     $('.enrichment .diagram').on('click', function() {
       count++;

@@ -14,7 +14,6 @@ App.Snapshot.controller = {
   // },
 
   initSwitchHero: function() {
-    console.log('initSwitchHero');
     var photos = [
       '../heros/snapshot.jpg',
       '../heros/snapshot1.jpg',
@@ -26,7 +25,6 @@ App.Snapshot.controller = {
     var count = 0;
 
     $('.snapshot-main').on('click', function() {
-      console.log(count);
       count++;
       if (count === photos.length) { count = 0; }
       $(this).css('background-image', 'url(' + photos[count] + ')');

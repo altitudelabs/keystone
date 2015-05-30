@@ -74,7 +74,6 @@ App.Keystory.controller = {
         $(selector).addClass('fadeInRight');
         $(selector).removeClass('fadeOutLeft');
 
-        console.log('interval');
         setTimeout(function() {
           $(selector).addClass('fadeOutLeft');
           $(selector).removeClass('fadeInRight');
