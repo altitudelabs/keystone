@@ -88,18 +88,26 @@
   &.service {
     @include background-cover-image($service-main-url);
   }
+
+  &.summer {
+    @include background-cover-image($summer-main-url);
+  }
+
   &.keystory {
     @include background-cover-image($keystory-main-url);
   }
+
   /*&.contact {
     @include background-cover-image($home-carousel-contact-url);
   }*/
   &.career {
     @include background-cover-image($career-main-url);
   }
+
   &.about {
     @include background-cover-image($about-main-url);
   }
+  
   & .overlay {
     height: 100%;
     width: 100%;
