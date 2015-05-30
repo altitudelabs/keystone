@@ -61,15 +61,16 @@ exports = module.exports = function(app) {
 
 
 		var message = {};
-
+		console.log(req.body);
 		message.text = req.body.message;
 		message.from_email = req.body.email;
-		message.subject = 'sentFromGod';
+		message.subject = 'New contact from Keystoneprep.com';
 		message.to = [{ 
-			email: 'victorli@altitudelabs.com',
+			email: 'andrew.won@keystoneprep.com',
 			name: req.body['name.full'],
 			type: 'to'
 		}];
+		
 
 		mandrill_client.messages.send({
 			message: message,
