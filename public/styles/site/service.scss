@@ -173,7 +173,10 @@
     .course-item {
       &:not(:first-child) {
         margin-left: -4px;
-        padding-top: 20px;
+        @media (max-width: $mobile-width) {
+
+          padding-top: 20px;
+        }
         /*border-left: 1px solid $main-red;*/
       }
 

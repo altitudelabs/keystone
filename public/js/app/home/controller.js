@@ -45,6 +45,10 @@ App.Home.controller = {
       self.components.carousel.goToPrevSlide();
     });
 
+    $('.control-right').on('mousemove', function() {
+      $(this).css('width', '50px');
+    });
+
   },
 
   initSwitchHero: function() {
