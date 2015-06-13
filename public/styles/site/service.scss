@@ -387,7 +387,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: black;
+        background: $footer-grey;
         opacity: 0.5;
       }
 
@@ -441,13 +441,13 @@
 
       &:hover {
 
-        .overlay {
+        .overlay {/*
           background: $main-red;
-          opacity: 0.8;
+          opacity: 0.8;*/
         }
         .more-button {
           background: white;
-          color: $main-red;
+          color: $main-grey;
         }
       }
     }
