@@ -19,9 +19,9 @@ body {
   
 }
 a {
-  color: $main-grey;
+  color: $main-grey !important;
   &:hover {
-    color: $main-grey;
+    color: $main-grey !important;
   }
 }
 
