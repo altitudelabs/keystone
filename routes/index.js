@@ -69,8 +69,12 @@ exports = module.exports = function(app) {
 			email: 'andrew.won@keystoneprep.com',
 			name: req.body['name.full'],
 			type: 'to'
+		},
+	 	{
+			email: 'keystone@keystoneprep.com',
+			name: req.body['name.full'],
+			type: 'to'
 		}];
-		
 
 		mandrill_client.messages.send({
 			message: message,
