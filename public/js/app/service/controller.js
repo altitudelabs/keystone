@@ -16,7 +16,7 @@ App.Service.controller = {
       }, 1000);
     });
 
-    this.initSwitchHero();
+    // this.initSwitchHero();
   },
 
   initSwitchHero: function() {

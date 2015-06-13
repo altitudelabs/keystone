@@ -23,7 +23,9 @@ $logo-image-url: '../images/logo@2x.png';
 }
 
 .nav-buttons {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
   margin: 0;
   padding: 0 10px 0 0;
   height: $nav-height;

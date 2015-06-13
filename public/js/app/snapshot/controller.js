@@ -14,20 +14,20 @@ App.Snapshot.controller = {
   // },
 
   initSwitchHero: function() {
-    var photos = [
-      '../heros/snapshot.jpg',
-      '../heros/snapshot1.jpg',
-      // '../heros/snapshot2.jpg',
-      // '../heros/snapshot3.jpg',
-      '../heros/snapshot4.jpg'
-      // '../heros/snapshot5.jpg'
-    ];
-    var count = 0;
+    // var photos = [
+    //   '../heros/snapshot.jpg',
+    //   '../heros/snapshot1.jpg',
+    //   // '../heros/snapshot2.jpg',
+    //   // '../heros/snapshot3.jpg',
+    //   '../heros/snapshot4.jpg'
+    //   // '../heros/snapshot5.jpg'
+    // ];
+    // var count = 0;
 
-    $('.snapshot-main').on('click', function() {
-      count++;
-      if (count === photos.length) { count = 0; }
-      $(this).css('background-image', 'url(' + photos[count] + ')');
-    });
+    // $('.snapshot-main').on('click', function() {
+    //   count++;
+    //   if (count === photos.length) { count = 0; }
+    //   $(this).css('background-image', 'url(' + photos[count] + ')');
+    // });
   }
 };

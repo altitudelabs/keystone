@@ -26,6 +26,6 @@ App.Summer.controller = {
       }, 500);
     });
 
-    this.initSwitchHero();
+    // this.initSwitchHero();
   },
 };

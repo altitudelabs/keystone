@@ -11,7 +11,7 @@ App.Keystory.controller = {
         scrollTop: $('.keystory-testimonials').offset().top - 70
       }, 1000);
     });
-    this.initSwitchHero();
+    // this.initSwitchHero();
   },
 
   initSwitchHero: function() {

@@ -3,6 +3,7 @@
 App.Home.controller = {
   components: {},
   init: function() {
+    // this.initSwitchHero();
   },
   initCarousel: function() {
     var self = this;

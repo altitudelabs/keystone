@@ -1,7 +1,7 @@
 'use strict';
 App.Bootcamp.controller = {
   init: function() {
-
+    // this.initSwitchHero();
   },
 
   initSwitchHero: function() {

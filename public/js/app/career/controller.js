@@ -12,7 +12,7 @@ App.Career.controller = {
         scrollTop: $('.text-content').offset().top - 70
       }, 1000);
     });
-    this.initSwitchHero();
+    // this.initSwitchHero();
   },
 
   initSwitchHero: function() {

@@ -9,8 +9,8 @@ App.About.controller = {
         scrollTop: $('.about-history').offset().top - 70
       }, 1000);
     });
-    this.initSwitchHero();
-    this.initSwitchIllustrations();
+    // this.initSwitchHero();
+    // this.initSwitchIllustrations();
   },
 
   initSwitchHero: function() {
