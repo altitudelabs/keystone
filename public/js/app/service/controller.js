@@ -60,7 +60,7 @@ App.Service.controller = {
     //   }
     //   $(this).attr('src', photos[count]);
     // });
-    // this.initRunningMan();
+    this.initRunningMan();
   },
 
   initRunningMan: function() {

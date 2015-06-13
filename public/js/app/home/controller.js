@@ -48,6 +48,15 @@ App.Home.controller = {
     $('.control-right').on('mousemove', function() {
       $(this).css('width', '50px');
     });
+    $('.control-left').on('mousemove', function() {
+      $(this).css('width', '50px');
+    });
+    $('.control-right').mouseleave(function() {
+      $(this).css('width', '30px');
+    });
+    $('.control-left').mouseleave(function() {
+      $(this).css('width', '30px');
+    });
 
   },
 

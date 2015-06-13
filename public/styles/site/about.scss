@@ -5,6 +5,9 @@ $mobile-section-title-font-size: 30px;
   @include background-cover-image($about-main-url);
   height: 85%;
   min-height: 500px;
+  @media (max-width: $tablet-width) {
+    @include background-cover-image($about-main-url-mobile);
+  }
   @media (max-width: $mobile-width) {
     height: 60%;
     min-height: 400px;
