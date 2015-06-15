@@ -4,6 +4,8 @@
   height: 85%;
   min-height: 500px;
   @media (max-width: $mobile-width) {
+    @include background-cover-image($service-main-url-mobile);
+
     height: 60%;
     min-height: 400px;
   }
@@ -61,19 +63,23 @@
 
 
 .timeline-section {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }  
+  padding: 45px 0px;
   .diagram {
     /*padding-left: 5%;*/
     /*padding-right: 5%;*/
     width: 100%;
-    @media (max-width: $mobile-width) {
+    /*@media (max-width: $mobile-width) {
       display: none;
-    }
+    }*/
   }
   .running-man {
     width: 100%;
-    @media (max-width: $mobile-width) {
+    /*@media (max-width: $mobile-width) {
       display: none;
-    }
+    }*/
 
   }
   .underline {

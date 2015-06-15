@@ -5,6 +5,7 @@
   min-height: 250px;
   position: relative;
   @media (max-width: $mobile-width) {
+    @include background-cover-image($snapshot-main-url-mobile);
     height: 150px;
     min-height: none;
   }

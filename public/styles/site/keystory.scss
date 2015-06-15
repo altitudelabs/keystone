@@ -7,6 +7,7 @@
   height: 85%;
   min-height: 500px;
   @media (max-width: $mobile-width) {
+    @include background-cover-image($keystory-main-url-mobile);
     height: 60%;
     min-height: 400px;
   }
