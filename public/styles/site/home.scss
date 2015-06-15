@@ -87,26 +87,26 @@
   position: relative;
 
   &.service {
-    @include background-cover-image($service-main-url);
+    @include background-cover-image($service-main-url-mobile);
   }
 
   &.summer {
-    @include background-cover-image($summer-main-url);
+    @include background-cover-image($summer-main-url-mobile);
   }
 
   &.keystory {
-    @include background-cover-image($keystory-main-url);
+    @include background-cover-image($keystory-main-url-mobile);
   }
 
   /*&.contact {
-    @include background-cover-image($home-carousel-contact-url);
+    @include background-cover-image($home-carousel-contact-url-mobile);
   }*/
   &.career {
-    @include background-cover-image($career-main-url);
+    @include background-cover-image($career-main-url-mobile);
   }
 
   &.about {
-    @include background-cover-image($about-main-url);
+    @include background-cover-image($about-main-url-mobile);
   }
   
   & .overlay {
