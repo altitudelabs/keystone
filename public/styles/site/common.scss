@@ -280,7 +280,7 @@ a {
   }
 
 
-  h1, h2, h4, h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
   }
 
@@ -328,6 +328,18 @@ a {
 
   ul {
     margin-bottom: 20px;
+    li {
+      &.long {
+        margin-top: 10px;
+      }
+    }
   }
+
 }
 
+
+.desktop-only {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}

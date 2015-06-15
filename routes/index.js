@@ -38,11 +38,13 @@ exports = module.exports = function(app) {
 	app.get('/', routes.views.index);
 	app.get('/service/:category?', routes.views.service);
 	app.get('/keystory', routes.views.keystory);
+	app.get('/keystory2', routes.views.keystory2);
 	app.get('/about', routes.views.about);
 	app.get('/career', routes.views.career);
 	app.get('/blog/:category?', routes.views.blog);
 	app.get('/blog/post/:post', routes.views.post);
 	app.get('/contact', routes.views.contact);
+	app.get('/privacy', routes.views.privacy);
 	
 	app.get('/bootcamp', routes.views.bootcamp);
 	app.get('/snapshot', routes.views.snapshot);
