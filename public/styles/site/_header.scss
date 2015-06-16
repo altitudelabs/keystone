@@ -31,6 +31,8 @@ $logo-image-url: '../images/logo@2x.png';
   margin: 0;
   padding: 0 10px 0 0;
   height: $nav-height;
+  -webkit-transform: translateZ(0);
+  
   @media (max-width: $tablet-width) {
     display: none;
   }
