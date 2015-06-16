@@ -96,11 +96,11 @@ App.Keystory.controller = {
 
   },
   initTextSlider2: function() {
-    var self = this;
+    // var self = this;
 
-    if (App.isMobile()) {
-      // return;
-    }
+    // if (App.isMobile()) {
+    //   // return;
+    // }
 
 
     var selector = '.quote.tag-line .tag-container';
@@ -112,18 +112,12 @@ App.Keystory.controller = {
       '100% of students love Keystone!'
     ];
 
-    var count = 0;
+    var count = -1;
 
     $(selector).addClass('animated');
     $(selector + ' h1').text(texts[count]);
-    // nextText();
-
-
-
-    // setTimeout(function () {
-    //   $(selector).addClass('fadeOutLeft');
-    // }, 5000);
-
+    
+    nextText();
     setInterval(function() {
       nextText();
     }, 5500);
