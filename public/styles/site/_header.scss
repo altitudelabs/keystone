@@ -47,8 +47,8 @@ nav {
 .nav-button {
   text-transform: uppercase;
   line-height: $nav-height;
-  /*display: inline-block;*/
-  float: left;
+  display: inline-block;
+  /*float: left;*/
   padding: 4px 14px 0 14px;
 }
 
