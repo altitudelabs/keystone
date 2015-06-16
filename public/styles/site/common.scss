@@ -63,27 +63,31 @@ a {
  * --------------------------------------------------------------------------*/
 @font-face {
   font-family: 'HelveticaNeueLTStd';
-  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Md.otf), 
-        url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Md.eot);
+  src:  url(../fonts/used/helvetica-neue-md.otf), 
+        url(../fonts/used/helvetica-neue-md.ttf),
+        url(../fonts/used/helvetica-neue-md.eot);
 }
 @font-face {
   font-family: 'HelveticaNeueLTStd';
-  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-MdIt.otf), 
-        url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-MdIt.eot);
+  src:  url(../fonts/used/helvetica-neue-mdlt.otf), 
+        url(../fonts/used/helvetica-neue-mdlt.ttf),
+        url(../fonts/used/helvetica-neue-mdlt.eot);
   font-style: italic;
 }
 
 @font-face {
   font-family: 'HelveticaNeueLTStd';
-  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.otf), 
-        url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.eot);
+  src:  url(../fonts/used/helvetica-neue-bd.otf), 
+        url(../fonts/used/helvetica-neue-bd.ttf)
+        url(../fonts/used/helvetica-neue-bd.eot);
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'HelveticaNeueLTStd';
-  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-BdIt.otf), 
-        url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-BdIt.eot);
+  src:  url(../fonts/used/helvetica-neue-bdlt.otf), 
+        url(../fonts/used/helvetica-neue-bdlt.ttf),
+        url(../fonts/used/helvetica-neue-bdlt.eot);
   font-weight: bold;
   font-style: italic;
 }
@@ -91,15 +95,17 @@ a {
 
 @font-face {
   font-family: 'HelveticaNeueLTStd';
-  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Lt.otf), 
-        url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Lt.eot);
+  src:  url(../fonts/used/helvetica-neue-lt.otf), 
+        url(../fonts/used/helvetica-neue-lt.ttf),
+        url(../fonts/used/helvetica-neue-lt.eot);
   font-weight: lighter;
 }
 
 @font-face {
   font-family: 'HelveticaNeueLTStd';
-  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-LtIt.otf), 
-        url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-LtIt.eot);
+  src:  url(../fonts/used/helvetica-neue-ltlt.otf), 
+        url(../fonts/used/helvetica-neue-ltlt.ttf),
+        url(../fonts/used/helvetica-neue-ltlt.eot);
   font-weight: lighter;
   font-style: italic;
 }
