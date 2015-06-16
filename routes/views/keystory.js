@@ -10,6 +10,6 @@ exports = module.exports = function(req, res) {
   locals.section = 'keystory';
   
   // Render the view
-  view.render('keystory');
+  view.render('keystory2');
   
 };

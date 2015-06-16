@@ -12,7 +12,7 @@ App.Keystory.controller = {
       }, 1000);
     });
     // this.initSwitchHero();
-    this.initTextSlider();
+    // this.initTextSlider();
     this.initTextSlider2();
   },
 
@@ -114,15 +114,17 @@ App.Keystory.controller = {
 
     var count = 0;
 
-    nextText();
     $(selector).addClass('animated');
     $(selector + ' h1').text(texts[count]);
+    // nextText();
 
 
 
-    setTimeout(function () {
-      $(selector).addClass('fadeOutLeft');
-    }, 5000);
+    // setTimeout(function () {
+    //   $(selector).addClass('fadeOutLeft');
+    // }, 5000);
+    
+    nextText();
 
     function nextText () {
 
