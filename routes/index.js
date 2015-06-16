@@ -24,6 +24,7 @@ var keystone = require('keystone'),
 
 // Common Middleware
 keystone.pre('routes', middleware.initLocals);
+keystone.pre('routes', middleware.cors);
 keystone.pre('render', middleware.flashMessages);
 
 // Import Route Controllers
