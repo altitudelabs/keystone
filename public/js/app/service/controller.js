@@ -8,15 +8,21 @@ App.Service.controller = {
     if (App.isMobile()) {
       selector = '.service-regular-programs';
     } else {
-      selector = '.running-man';
+      selector = '.timeline-section';
     }
     $('.scroll-down-button').on('click', function() {
       $('html, body').animate({
         scrollTop: $(selector).offset().top - 70
-      }, 1000);
+      }, 500);
     });
 
     // this.initSwitchHero();
+    this.disableLinks();
+  },
+  disableLinks: function () {
+    if (App.isMobile()) {
+      $('a.disabled-mobile').removeAttr('href');
+    }
   },
 
   initSwitchHero: function() {

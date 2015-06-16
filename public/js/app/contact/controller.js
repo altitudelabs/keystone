@@ -9,7 +9,7 @@ App.Contact.controller = {
     $('.scroll-down-button').on('click', function() {
       $('html, body').animate({
         scrollTop: $('.contact-offices').offset().top - 70
-      }, 1000);
+      }, 500);
     });
   },
   initForm: function() {

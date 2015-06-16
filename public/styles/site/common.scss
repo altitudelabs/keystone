@@ -1,7 +1,7 @@
 html {
   height: 100%;
   margin: 0;
-  overflow: auto;
+  /*overflow: auto;*/
 }
 * {
   -webkit-font-smoothing: antialiased;
@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding-top: $nav-height;
   width: 100%;
-  overflow: auto;
+  /*overflow: auto;*/
 }
 a {
   color: $main-grey;
@@ -123,7 +123,7 @@ a {
         url(../fonts/used/helvetica-neue-ltit.ttf) format('truetype'),
         url(../fonts/used/helvetica-neue-ltit.otf) format('opentype'),
         url(../fonts/used/helvetica-neue-ltit.woff) format('woff');
-        
+
   font-weight: lighter;
   font-style: italic;
 }
@@ -371,5 +371,15 @@ a {
 .desktop-only {
   @media (max-width: $mobile-width) {
     display: none;
+  }
+}
+.mobile-only {
+  @media (min-width: $mobile-width) {
+    display: none;
+  } 
+}
+.disabled-mobile {
+  @media (max-width: $mobile-width) {
+    pointer-events: none;
   }
 }

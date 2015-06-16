@@ -25,7 +25,6 @@ App.Summer.controller = {
         scrollTop: $('.text-content').offset().top - 70
       }, 500);
     });
-
     // this.initSwitchHero();
   },
 };

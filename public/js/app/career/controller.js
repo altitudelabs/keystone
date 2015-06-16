@@ -10,7 +10,7 @@ App.Career.controller = {
     $('.scroll-down-button').on('click', function() {
       $('html, body').animate({
         scrollTop: $('.text-content').offset().top - 70
-      }, 1000);
+      }, 500);
     });
     // this.initSwitchHero();
   },
