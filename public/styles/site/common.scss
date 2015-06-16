@@ -82,7 +82,7 @@ a {
   font-family: 'HelveticaNeueLTStd';
   src:  url(../fonts/used/helvetica-neue-bd.eot);;
   src:  url(../fonts/used/helvetica-neue-bd.eot?#iefix) format('embedded-opentype'), 
-        url(../fonts/used/helvetica-neue-bd.ttf format('truetype'))
+        url(../fonts/used/helvetica-neue-bd.ttf) format('truetype'),
         url(../fonts/used/helvetica-neue-bd.otf) format('opentype');
   font-weight: bold;
 }
@@ -100,10 +100,10 @@ a {
 
 @font-face {
   font-family: 'HelveticaNeueLTStd';
-  src:  url(../fonts/used/helvetica-neue-it.eot);;
-  src:  url(../fonts/used/helvetica-neue-it.eot?#iefix) format('embedded-opentype'), 
-        url(../fonts/used/helvetica-neue-it.ttf) format('truetype'),
-        url(../fonts/used/helvetica-neue-it.otf) format('opentype');
+  src:  url(../fonts/used/helvetica-neue-lt.eot);;
+  src:  url(../fonts/used/helvetica-neue-lt.eot?#iefix) format('embedded-opentype'), 
+        url(../fonts/used/helvetica-neue-lt.ttf) format('truetype'),
+        url(../fonts/used/helvetica-neue-lt.otf) format('opentype');
   font-weight: lighter;
 }
 
