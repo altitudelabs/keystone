@@ -8,6 +8,7 @@ $logo-image-url: '../images/logo@2x.png';
   width: 100%;
   z-index: 1;
   border-bottom: 1px solid $light-grey;
+  -webkit-transform: translateZ(0);
 }
 
 .nav-logo {
