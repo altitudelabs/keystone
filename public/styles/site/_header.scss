@@ -45,7 +45,8 @@ nav {
 .nav-button {
   text-transform: uppercase;
   line-height: $nav-height;
-  display: inline-block;
+  /*display: inline-block;*/
+  float: left;
   padding: 4px 14px 0 14px;
 }
 
@@ -134,7 +135,6 @@ nav {
 }
 .mob-nav-button {
   padding: 10px 20px;
-  float: left;
   /*&:hover {*/
     /*background-color: $main-red;*/
     /*a { color: white; }*/
