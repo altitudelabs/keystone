@@ -35,6 +35,8 @@ var routes = {
 exports = module.exports = function(app) {
 	
 	// Views
+
+
 	app.get('/', routes.views.index);
 	app.get('/service/:category?', routes.views.service);
 	app.get('/keystory', routes.views.keystory);
@@ -49,12 +51,6 @@ exports = module.exports = function(app) {
 	app.get('/bootcamp', routes.views.bootcamp);
 	app.get('/snapshot', routes.views.snapshot);
 	app.get('/summer', routes.views.summer);
-
-
-
-
-
-
 
 
 	var mandrill = require('mandrill-api/mandrill');
