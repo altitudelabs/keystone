@@ -67,14 +67,17 @@ a {
   src:  url(../fonts/used/helvetica-neue-md.eot);;
   src:  url(../fonts/used/helvetica-neue-md.eot?#iefix) format('embedded-opentype'), 
         url(../fonts/used/helvetica-neue-md.ttf) format('truetype'),
-        url(../fonts/used/helvetica-neue-md.otf) format('opentype');
+        url(../fonts/used/helvetica-neue-md.otf) format('opentype'),
+        url(../fonts/used/helvetica-neue-md.woff) format('woff');
 }
 @font-face {
   font-family: 'HelveticaNeueLTStd';
   src:  url(../fonts/used/helvetica-neue-mdit.eot);;
   src:  url(../fonts/used/helvetica-neue-mdit.eot?#iefix) format('embedded-opentype'), 
         url(../fonts/used/helvetica-neue-mdit.ttf) format('truetype'),
-        url(../fonts/used/helvetica-neue-mdit.otf) format('opentype');
+        url(../fonts/used/helvetica-neue-mdit.otf) format('opentype'),
+        url(../fonts/used/helvetica-neue-mdit.woff) format('woff');
+
   font-style: italic;
 }
 
@@ -83,7 +86,9 @@ a {
   src:  url(../fonts/used/helvetica-neue-bd.eot);;
   src:  url(../fonts/used/helvetica-neue-bd.eot?#iefix) format('embedded-opentype'), 
         url(../fonts/used/helvetica-neue-bd.ttf) format('truetype'),
-        url(../fonts/used/helvetica-neue-bd.otf) format('opentype');
+        url(../fonts/used/helvetica-neue-bd.otf) format('opentype'),
+        url(../fonts/used/helvetica-neue-bd.woff) format('woff');
+
   font-weight: bold;
 }
 
@@ -92,7 +97,9 @@ a {
   src:  url(../fonts/used/helvetica-neue-bdit.eot);;
   src:  url(../fonts/used/helvetica-neue-bdit.eot?#iefix) format('embedded-opentype'), 
         url(../fonts/used/helvetica-neue-bdit.ttf) format('truetype'),
-        url(../fonts/used/helvetica-neue-bdit.otf) format('opentype');
+        url(../fonts/used/helvetica-neue-bdit.otf) format('opentype'),
+        url(../fonts/used/helvetica-neue-bdit.woff) format('woff');
+
   font-weight: bold;
   font-style: italic;
 }
@@ -103,7 +110,9 @@ a {
   src:  url(../fonts/used/helvetica-neue-lt.eot);;
   src:  url(../fonts/used/helvetica-neue-lt.eot?#iefix) format('embedded-opentype'), 
         url(../fonts/used/helvetica-neue-lt.ttf) format('truetype'),
-        url(../fonts/used/helvetica-neue-lt.otf) format('opentype');
+        url(../fonts/used/helvetica-neue-lt.otf) format('opentype'),
+        url(../fonts/used/helvetica-neue-lt.woff) format('woff');
+
   font-weight: lighter;
 }
 
@@ -112,7 +121,9 @@ a {
   src:  url(../fonts/used/helvetica-neue-ltit.eot);;
   src:  url(../fonts/used/helvetica-neue-ltit.eot?#iefix) format('embedded-opentype'), 
         url(../fonts/used/helvetica-neue-ltit.ttf) format('truetype'),
-        url(../fonts/used/helvetica-neue-ltit.otf) format('opentype');
+        url(../fonts/used/helvetica-neue-ltit.otf) format('opentype'),
+        url(../fonts/used/helvetica-neue-ltit.woff) format('woff');
+        
   font-weight: lighter;
   font-style: italic;
 }
