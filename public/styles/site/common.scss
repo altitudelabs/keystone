@@ -63,23 +63,27 @@ a {
  * --------------------------------------------------------------------------*/
 @font-face {
   font-family: 'HelveticaNeueLTStd';
-  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Md.otf);
+  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Md.otf), 
+        url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Md.eot);
 }
 @font-face {
   font-family: 'HelveticaNeueLTStd';
-  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-MdIt.otf);
+  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-MdIt.otf), 
+        url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-MdIt.eot);
   font-style: italic;
 }
 
 @font-face {
   font-family: 'HelveticaNeueLTStd';
-  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.otf);
+  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.otf), 
+        url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.eot);
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'HelveticaNeueLTStd';
-  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-BdIt.otf);
+  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-BdIt.otf), 
+        url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-BdIt.eot);
   font-weight: bold;
   font-style: italic;
 }
@@ -87,13 +91,15 @@ a {
 
 @font-face {
   font-family: 'HelveticaNeueLTStd';
-  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Lt.otf);
+  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Lt.otf), 
+        url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Lt.eot);
   font-weight: lighter;
 }
 
 @font-face {
   font-family: 'HelveticaNeueLTStd';
-  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-LtIt.otf);
+  src:  url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-LtIt.otf), 
+        url(../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-LtIt.eot);
   font-weight: lighter;
   font-style: italic;
 }

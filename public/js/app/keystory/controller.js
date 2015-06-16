@@ -123,38 +123,35 @@ App.Keystory.controller = {
     // setTimeout(function () {
     //   $(selector).addClass('fadeOutLeft');
     // }, 5000);
-    
-    nextText();
+
+    setInterval(function() {
+      nextText();
+    }, 5500);
 
     function nextText () {
+      count ++;
 
-      setInterval(function() {
-        count ++;
-        if (count === texts.length) {
-          count = 0;
-        }
+      if (count === texts.length) {
+        count = 0;
+      }
 
+      $(selector + ' h1').text(texts[count]);
+      $(selector).addClass('fadeInRight');
+      $(selector).removeClass('fadeOutLeft');
 
+      setTimeout(function() {
+        $(selector).addClass('fadeOutLeft');
+        $(selector).removeClass('fadeInRight');
 
-        $(selector + ' h1').text(texts[count]);
-        $(selector).addClass('fadeInRight');
-        $(selector).removeClass('fadeOutLeft');
+      }, 5000);
+      //change text
 
-        setTimeout(function() {
-          $(selector).addClass('fadeOutLeft');
-          $(selector).removeClass('fadeInRight');
+      // fade in right
 
-        }, 5000);
-        //change text
+      // wait 5 sec
 
-        // fade in right
+      // fade out left
 
-        // wait 5 sec
-
-        // fade out left
-
-
-      }, 5500);
 
     }
   }
