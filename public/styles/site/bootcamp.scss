@@ -1,7 +1,7 @@
 
 .bootcamp-main {
   @include background-cover-image($bootcamp-main-url);
-  height: 50%;
+  height: 70%;
   min-height: 250px;
   position: relative;
   @media (max-width: $mobile-width) {
@@ -15,14 +15,14 @@
     width: 100%;
     bottom: 30px;
   }
-  .overlay {
+  .overlay {/*
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     background-color: $footer-grey;
-    opacity: 0.5;
+    opacity: 0.2;*/
   }
 }
 .bootcamp-main-text {
