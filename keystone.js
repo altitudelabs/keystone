@@ -48,7 +48,7 @@ keystone.set('cloudinary config', {
 
 
 // Port
-keystone.set('port', process.env.KEYSTONE_PORT);
+keystone.set('port', 8888);
 
 // Mandrill
 keystone.set('mandrill api key', '86xH7_i2NLC5x5sL9hA36w');
