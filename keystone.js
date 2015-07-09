@@ -53,8 +53,6 @@ keystone.set('port', process.env.KEYSTONE_PORT);
 // Mandrill
 keystone.set('mandrill api key', '86xH7_i2NLC5x5sL9hA36w');
 keystone.set('mandrill username', 'altitudedrive@gmail.com');
-
-
 // Load your project's Models
 
 keystone.import('models');
