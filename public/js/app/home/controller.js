@@ -33,9 +33,9 @@ App.Home.controller = {
       // randomStart: true,
       infiniteLoop: true,
       touchEnabled: true,
-      moveSlides: 1
-      // auto: true,
-      // pause: 5000
+      moveSlides: 1,
+      auto: true,
+      pause: 5000
     });
 
 

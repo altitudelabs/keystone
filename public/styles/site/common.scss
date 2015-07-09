@@ -50,13 +50,6 @@ a {
   -ms-transition: $type $duration $style;
   -o-transition: $type $duration $style;
   transition: $type $duration $style;
-/*  @media (max-width: $mobile-width) {
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-    transition: none;
-  }*/
 }
 
 /* font - HelveticaNeueLTStd
@@ -65,7 +58,7 @@ a {
 @font-face {
   font-family: 'HelveticaNeueLTStd';
   src:  url(../fonts/used/helvetica-neue-md.eot);;
-  src:  url(../fonts/used/helvetica-neue-md.eot?#iefix) format('embedded-opentype'), 
+  src:  url(../fonts/used/helvetica-neue-md.eot?#iefix) format('embedded-opentype'),
         url(../fonts/used/helvetica-neue-md.ttf) format('truetype'),
         url(../fonts/used/helvetica-neue-md.otf) format('opentype'),
         url(../fonts/used/helvetica-neue-md.woff) format('woff');
@@ -73,7 +66,7 @@ a {
 @font-face {
   font-family: 'HelveticaNeueLTStd';
   src:  url(../fonts/used/helvetica-neue-mdit.eot);;
-  src:  url(../fonts/used/helvetica-neue-mdit.eot?#iefix) format('embedded-opentype'), 
+  src:  url(../fonts/used/helvetica-neue-mdit.eot?#iefix) format('embedded-opentype'),
         url(../fonts/used/helvetica-neue-mdit.ttf) format('truetype'),
         url(../fonts/used/helvetica-neue-mdit.otf) format('opentype'),
         url(../fonts/used/helvetica-neue-mdit.woff) format('woff');
@@ -83,7 +76,7 @@ a {
 @font-face {
   font-family: 'HelveticaNeueLTStd';
   src:  url(../fonts/used/helvetica-neue-bd.eot);;
-  src:  url(../fonts/used/helvetica-neue-bd.eot?#iefix) format('embedded-opentype'), 
+  src:  url(../fonts/used/helvetica-neue-bd.eot?#iefix) format('embedded-opentype'),
         url(../fonts/used/helvetica-neue-bd.ttf) format('truetype'),
         url(../fonts/used/helvetica-neue-bd.otf) format('opentype'),
         url(../fonts/used/helvetica-neue-bd.woff) format('woff');
@@ -93,7 +86,7 @@ a {
 @font-face {
   font-family: 'HelveticaNeueLTStd';
   src:  url(../fonts/used/helvetica-neue-bdit.eot);;
-  src:  url(../fonts/used/helvetica-neue-bdit.eot?#iefix) format('embedded-opentype'), 
+  src:  url(../fonts/used/helvetica-neue-bdit.eot?#iefix) format('embedded-opentype'),
         url(../fonts/used/helvetica-neue-bdit.ttf) format('truetype'),
         url(../fonts/used/helvetica-neue-bdit.otf) format('opentype'),
         url(../fonts/used/helvetica-neue-bdit.woff) format('woff');
@@ -106,7 +99,7 @@ a {
 @font-face {
   font-family: 'HelveticaNeueLTStd';
   src:  url(../fonts/used/helvetica-neue-lt.eot);;
-  src:  url(../fonts/used/helvetica-neue-lt.eot?#iefix) format('embedded-opentype'), 
+  src:  url(../fonts/used/helvetica-neue-lt.eot?#iefix) format('embedded-opentype'),
         url(../fonts/used/helvetica-neue-lt.ttf) format('truetype'),
         url(../fonts/used/helvetica-neue-lt.otf) format('opentype'),
         url(../fonts/used/helvetica-neue-lt.woff) format('woff');
@@ -116,7 +109,7 @@ a {
 @font-face {
   font-family: 'HelveticaNeueLTStd';
   src:  url(../fonts/used/helvetica-neue-ltit.eot);;
-  src:  url(../fonts/used/helvetica-neue-ltit.eot?#iefix) format('embedded-opentype'), 
+  src:  url(../fonts/used/helvetica-neue-ltit.eot?#iefix) format('embedded-opentype'),
         url(../fonts/used/helvetica-neue-ltit.ttf) format('truetype'),
         url(../fonts/used/helvetica-neue-ltit.otf) format('opentype'),
         url(../fonts/used/helvetica-neue-ltit.woff) format('woff');
@@ -219,7 +212,7 @@ a {
     /*height: 77px;*/
     top: 20%;
     text-align: center;
-    
+
     &#mce-success-response {
       /*background-color: green;*/
     }
@@ -345,7 +338,7 @@ a {
       width: 100%;
       height: auto;
     }
-    
+
   }
 
   .no-padding {
@@ -372,7 +365,7 @@ a {
 .mobile-only {
   @media (min-width: $mobile-width) {
     display: none;
-  } 
+  }
 }
 .disabled-mobile {
   @media (max-width: $mobile-width) {
