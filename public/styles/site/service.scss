@@ -27,7 +27,7 @@
     border: 2px white solid;
     cursor: pointer;
 
-    &:hover { 
+    &:hover {
 
     }
     div {
@@ -65,7 +65,7 @@
 .timeline-section {
   @media (max-width: $mobile-width) {
     display: none;
-  }  
+  }
   padding: 45px 0px;
   .diagram {
     /*padding-left: 5%;*/
@@ -89,6 +89,19 @@
   }
 }
 .service-regular-programs {
+  section {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  a.disabled-mobile {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
   a:hover {
     text-decoration: none;
   }
@@ -96,9 +109,12 @@
 /*    & > a {
       pointer-events: none;
       cursor: default;
-      
+
     }*/
-  }  
+  }
+  .more {
+    padding-bottom: 60px;
+  }
   .grade-5, .grade-11 {
     background-color: $light-grey;
   }
@@ -110,7 +126,7 @@
       @include transition();
     }
     @include transition();
-    
+
     .title {
       text-align: center;
       padding-top: 100px;
@@ -174,7 +190,7 @@
           display: none;
         }
       }
-      
+
     }
     .course-item {
       &:not(:first-child) {
@@ -191,7 +207,6 @@
       width: 50%;
 
       display: inline-block;
-      padding-bottom: 60px;
       @media (max-width: $mobile-width) {
         width: 100%;
       }
@@ -259,13 +274,13 @@
         @media (max-width: $mobile-width) {
           padding-top: 5px;
           font-size: 15px;
-          
+
         }
       }
     }
 
     .description {
-      padding: 20px 0 0 0;
+      padding: 20px 0 60px 0;
       width: 60%;
       margin: auto;
       @media (max-width: $mobile-width) {
@@ -293,7 +308,7 @@
         .separator {
           background-color: white;
         }
-       
+
        /* .cornerstone {
           @include background-contain-image($cornerstone-icon-hover);
         }
@@ -327,7 +342,7 @@
         .description {
           color: white;
         }
-        
+
       }
 
     }
@@ -337,7 +352,7 @@
     color: $main-red;
     text-decoration: underline;
     display: none;
-      
+
     @media (max-width: $mobile-width) {
       display: inline-block;
     }
@@ -381,7 +396,7 @@
         @include transition();
       }
       @include transition();
-      
+
       height: 45vh;
       min-height: 300px;
       position: relative;
@@ -470,7 +485,7 @@
           <span class="sub"></span>
           <div class="more-button">More</div>
         </div>
-        
+
       </a>
     </section>
     <section class="snapshot">

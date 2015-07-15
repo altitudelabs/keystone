@@ -5,7 +5,7 @@ App.Service.controller = {
   },
   initScrollDownButton: function() {
     var selector;
-    if (App.isMobile()) {
+    if (App.isTablet()) {
       selector = '.service-regular-programs';
     } else {
       selector = '.timeline-section';
@@ -66,7 +66,7 @@ App.Service.controller = {
     //   }
     //   $(this).attr('src', photos[count]);
     // });
-    this.initRunningMan();
+    // this.initRunningMan();
   },
 
   initRunningMan: function() {
@@ -87,7 +87,7 @@ App.Service.controller = {
     var documentPosition;
     var manPosition;
     var relativePosition;
-    var fullHeight = window.innerHeight - 70; 
+    var fullHeight = window.innerHeight - 70;
     var ratio;
     var totalPhoto = 12;
     var photoNumber;
@@ -95,10 +95,10 @@ App.Service.controller = {
 
     function runningMan(e) {
       fullHeight = window.innerHeight - 70 - parseFloat($('.running-man').css('height'));
-      
+
       documentPosition = $(document).scrollTop() + 70;
       manPosition = $('.running-man').offset().top;
-      
+
       relativePosition = manPosition - documentPosition;
 
       ratio = (-relativePosition/fullHeight) + 1;

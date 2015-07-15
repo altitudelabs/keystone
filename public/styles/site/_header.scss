@@ -8,6 +8,7 @@ $logo-image-url: '../images/logo@2x.png';
   width: 100%;
   z-index: 1;
   border-bottom: 1px solid $light-grey;
+  transform: translateZ(0);
   -webkit-transform: translateZ(0);
 }
 
@@ -24,15 +25,14 @@ $logo-image-url: '../images/logo@2x.png';
 }
 
 .nav-buttons {
+  float: right;
   list-style: none;
-  position: absolute;
-  top: 0;
-  right: 0;
+  display: table;
   margin: 0;
   padding: 0 10px 0 0;
   height: $nav-height;
   -webkit-transform: translateZ(0);
-  
+
   @media (max-width: $tablet-width) {
     display: none;
   }
@@ -49,7 +49,7 @@ nav {
 .nav-button {
   text-transform: uppercase;
   line-height: $nav-height;
-  display: inline-block;
+  display: table-cell;
   /*float: left;*/
   padding: 4px 14px 0 14px;
 }
@@ -61,7 +61,7 @@ nav {
   position: relative;
 */
 .mob-nav-toggle-button {
-  
+
   @media (min-width: $tablet-width + 1) {
     display: none;
   }
@@ -74,7 +74,7 @@ nav {
   padding: 32.5px 10px 0 10px; /*top 32.5px = (nav height 70px / 2) - (span height 5px / 2) */
 
   span,
-  span:before, 
+  span:before,
   span:after {
     cursor: pointer;
     border-radius: 1px;
@@ -87,11 +87,11 @@ nav {
     @include transition();
 
   }
-  
+
   span:before {
-    top: -10px; 
+    top: -10px;
   }
-  
+
   span:after {
     bottom: -10px;
   }
@@ -99,7 +99,7 @@ nav {
   &.active span {
     background-color: transparent;
   }
-  &.active span:before, 
+  &.active span:before,
   &.active span:after {
     top: 0;
   }

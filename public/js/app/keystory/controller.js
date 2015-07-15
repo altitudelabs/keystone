@@ -36,7 +36,7 @@ App.Keystory.controller = {
   initTextSlider: function() {
     var self = this;
 
-    if (App.isMobile()) {
+    if (App.isTablet()) {
       return;
     }
 
@@ -116,7 +116,7 @@ App.Keystory.controller = {
 
     $(selector).addClass('animated');
     $(selector + ' h1').text(texts[count]);
-    
+
     nextText();
     setInterval(function() {
       nextText();

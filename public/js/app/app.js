@@ -12,8 +12,11 @@ var App = {
     }
 
   },
-  isMobile: function() {
+  isTablet: function() {
     return window.innerWidth < 900;
+  },
+  isMobile: function() {
+    return window.innerWidth < 600;
   },
 
   /**
@@ -60,7 +63,7 @@ App.Util = {
       element = elements[i];
       controllerName = element.getAttribute('data-controller');
       action = element.getAttribute('data-action');
-  
+
       this.exec(controllerName, action);
     }
   },
@@ -69,7 +72,7 @@ App.Util = {
     if (controllerName !== '' && !!App[controllerName].controller && typeof App[controllerName].controller[action] === 'function') {
       App[controllerName].controller[action]();
     }
-    
+
   }
 };
 
