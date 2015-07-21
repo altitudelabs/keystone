@@ -55,7 +55,8 @@ exports = module.exports = function(app) {
 
 
 	var mandrill = require('mandrill-api/mandrill');
-	var mandrill_client = new mandrill.Mandrill('P-bgB48rdC27M_ulDMvSyg');
+	var mandrill_client = new mandrill.Mandrill(process.env.MANDRILL_KEY || 'not defined!');
+	console.log(mandrill_client);
 	app.post('/contact', function(req, res) {
 
 
