@@ -7,9 +7,9 @@ exports = module.exports = function(req, res) {
   
   // locals.section is used to set the currently selected
   // item in the header navigation.
-  locals.section = 'summer';
+  locals.section = 'programs';
   
   // Render the view
-  view.render('summer');
+  view.render('programs');
   
 };

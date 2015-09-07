@@ -41,8 +41,10 @@ $logo-image-url: '../images/logo@2x.png';
 
 nav {
   .active {
-    /*text-decoration: underline;*/
     color: $dark-red;
+  }
+  li a {
+    text-decoration: none !important;
   }
 }
 

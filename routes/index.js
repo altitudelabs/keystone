@@ -51,7 +51,7 @@ exports = module.exports = function(app) {
 	
 	app.get('/bootcamp', routes.views.bootcamp);
 	app.get('/snapshot', routes.views.snapshot);
-	app.get('/summer', routes.views.summer);
+	app.get('/programs', routes.views.programs);
 
 
 	var mandrill = require('mandrill-api/mandrill');
