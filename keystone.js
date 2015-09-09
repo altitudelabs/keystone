@@ -16,7 +16,7 @@ keystone.init({
 	'brand': 'keystone',
 
 	'sass': 'public',
-	'static': 'public',
+	// 'static': 'public',
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'hbs',
@@ -46,7 +46,8 @@ keystone.set('cloudinary config', {
   'api_secret': process.env.CLOUDINARY_APISECRET
 });
 
-
+// console.log(keystone.app);
+keystone.app.use(keystone.express.static('public', { maxAge: 0 }));
 // Port
 keystone.set('port', 8888);
 
@@ -65,7 +66,8 @@ keystone.set('locals', {
 	_: require('underscore'),
 	env: keystone.get('env'),
 	utils: keystone.utils,
-	editable: keystone.content.editable
+	editable: keystone.content.editable,
+	cache: false
 });
 
 // Load your project's Routes
