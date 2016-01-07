@@ -7,15 +7,13 @@ var keystone = require('keystone'),
  */
 
 var Keystory = new keystone.List('Keystory', {
-	map: { name: 'title' },
-	autokey: { path: 'slug', from: 'title', unique: true }
+	map: { name: 'author' },
+	autokey: { path: 'slug', from: 'author', unique: true }
 });
 
 Keystory.add({
-	title: { type: String, required: true },
-	content: { type: Types.Html, wysiwyg: true, height: 400 },
-	author: { type: String },
-	order: { type: String }
+	author: { type: String, required: true },
+	content: { type: Types.Html, height: 400 },
 });
 
 Keystory.schema.virtual('content.full').get(function() {

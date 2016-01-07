@@ -8,7 +8,9 @@ var keystone = require('keystone'),
 
 var Program = new keystone.List('Program', {
 	map: { name: 'title' },
-	autokey: { path: 'slug', from: 'title', unique: true }
+	autokey: { path: 'slug', from: 'title', unique: true },
+	nodelete: true,
+	nocreate: true
 });
 
 Program.add({
