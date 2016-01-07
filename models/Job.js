@@ -6,7 +6,7 @@ var keystone = require('keystone'),
  * ==========
  */
 
-var Job = new keystone.List('Job', {
+var Job = new keystone.List('Programs', {
   map: { name: 'title' },
   autokey: { path: 'slug', from: 'title', unique: true }
 });
@@ -29,4 +29,4 @@ Job.schema.virtual('content.full').get(function() {
 });
 
 Job.defaultColumns = 'title, state|20%, author|20%, publishedDate|20%';
-Job.register();
+//Job.register();

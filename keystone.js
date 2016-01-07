@@ -41,9 +41,9 @@ keystone.init({
 
 // Cloudinary
 keystone.set('cloudinary config', {
-  'cloud_name': process.env.CLOUDINARY_CLOUDNAME,
-  'api_key': process.env.CLOUDINARY_APIKEY,
-  'api_secret': process.env.CLOUDINARY_APISECRET
+  'cloud_name': process.env.CLOUDINARY_CLOUDNAME || 'dv7vierfl',
+  'api_key': process.env.CLOUDINARY_APIKEY || '953732468911817',
+  'api_secret': process.env.CLOUDINARY_APISECRET || 'LW6kbFzOvH9zLJK2UcAqS7ia_RQ'
 });
 
 // console.log(keystone.app);
@@ -113,9 +113,11 @@ keystone.set('email tests', require('./routes/emails'));
 // Configure the navigation bar in Keystone's Admin UI
 
 keystone.set('nav', {
-	'posts': ['posts', 'post-categories'],
-	'enquiries': 'enquiries',
-	'users': 'users'
+	//'posts': ['posts', 'post-categories'],
+	'users': 'users',
+	'services': 'services',
+	'programs':'programs',
+	'keystories':'keystories'
 });
 
 // Start Keystone to connect to your database and initialise the web server
