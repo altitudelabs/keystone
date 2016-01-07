@@ -7,16 +7,16 @@ var keystone = require('keystone'),
  */
 
 var Service = new keystone.List('Service', {
-	map: { name: 'title' },
-	autokey: { path: 'slug', from: 'title', unique: true },
+	map: { name: 'position' },
+	autokey: { path: 'slug', from: 'position', unique: true },
 	nodelete: true,
 	nocreate: true
 });
 
 Service.add({
-	title: { type: String, required: true },
+	position: {type: String, required: true },
+	title: { type: String},
 	tagline: { type: String },
-	bigWords: { type: String },
 	content: {
 		brief: { type: String, height: 150 },
 		mainContent: { type: Types.Html, wysiwyg: true, height: 400 }
