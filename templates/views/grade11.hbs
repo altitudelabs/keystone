@@ -57,12 +57,14 @@
       <div role="tabpanel" class="tab-pane active" id="test-prep">
         <div class="text-content">
         {{{grade11.left.content.mainContent}}}
+        {{#if grade11.left.image.url.length}}<div class="diagram"><img src="{{{grade11.left.image.url}}}"></div>{{/if}}
         </div>
 
       </div>
       <div role="tabpanel" class="tab-pane" id="CAPstone">
         <div class="text-content">
           {{{grade11.right.content.mainContent}}}
+          {{#if grade11.right.image.url.length}}<div class="diagram"><img src="{{{grade11.right.image.url}}}"></div>{{/if}}
         </div>
 
       </div>

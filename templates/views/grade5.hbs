@@ -57,12 +57,14 @@
       <div role="tabpanel" class="tab-pane active" id="cornerstone">
         <div class="text-content">
           {{{grade5.left.content.mainContent}}}
+          {{#if grade5.left.image.url.length}}<div class="diagram"><img src="{{{grade5.left.image.url}}}"></div>{{/if}}
         </div>
 
       </div>
       <div role="tabpanel" class="tab-pane" id="BAP">
         <div class="text-content">
           {{{grade5.right.content.mainContent}}}
+          {{#if grade5.right.image.url.length}}<div class="diagram"><img src="{{{grade5.right.image.url}}}"></div>{{/if}}
         </div>
       </div>
     </div>

@@ -14,7 +14,7 @@ var Service = new keystone.List('Service', {
 });
 
 Service.add({
-	position: {type: String, required: true },
+	position: {type: String, required: true,noedit:true,hidden:true},
 	title: { type: String},
 	tagline: { type: String },
 	content: {

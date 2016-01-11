@@ -57,15 +57,14 @@
       <div role="tabpanel" class="tab-pane active" id="test-prep">
         <div class="text-content">
           {{{grade8.left.content.mainContent}}}
-          <div class="diagram"><img src="../images/grades-09-11-curricular-enrichment-chart@2x.png"></div>
+          {{#if grade8.left.image.url.length}}<div class="diagram"><img src="{{{grade8.left.image.url}}}"></div>{{/if}}
         </div>
 
       </div>
       <div role="tabpanel" class="tab-pane" id="milestone">
         <div class="text-content">{{{grade8.right.content.mainContent}}}
+          {{#if grade8.right.image.url.length}}<div class="diagram"><img src="{{{grade8.right.image.url}}}"></div>{{/if}}
         </div>
-
-
       </div>
     </div>
 

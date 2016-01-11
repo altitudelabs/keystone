@@ -14,7 +14,7 @@ var Program = new keystone.List('Program', {
 });
 
 Program.add({
-	title: { type: String, required: true },
+	title: { type: String, required: true, noedit:true,hidden:true},
 	content: { type: Types.Html, wysiwyg: true, height: 400 }
 });
 
