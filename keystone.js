@@ -35,7 +35,11 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User',
-	'cookie secret': 'Hn_mdJJTV%L"WiR=BX-ud4N550<01e:t`sT4@$lwP%P^}Fwo+U0"OJo_p}#}>2U-'
+	'cookie secret': 'Hn_mdJJTV%L"WiR=BX-ud4N550<01e:t`sT4@$lwP%P^}Fwo+U0"OJo_p}#}>2U-',
+	'wysiwyg cloudinary images':true,
+	'wysiwyg additional buttons': 'fontsizeselect fontselect ',
+	'wysiwyg menubar': true
+
 
 });
 

@@ -56,14 +56,13 @@
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane active" id="test-prep">
         <div class="text-content">
-          {{{grade8.left.content.mainContent}}}
-          {{#if grade8.left.image.url.length}}<div class="diagram"><img src="{{{grade8.left.image.url}}}"></div>{{/if}}
+          {{#preprocessContent grade8.left.content.mainContent}}{{/preprocessContent}}
         </div>
 
       </div>
       <div role="tabpanel" class="tab-pane" id="milestone">
-        <div class="text-content">{{{grade8.right.content.mainContent}}}
-          {{#if grade8.right.image.url.length}}<div class="diagram"><img src="{{{grade8.right.image.url}}}"></div>{{/if}}
+        <div class="text-content">
+          {{#preprocessContent grade8.right.content.mainContent}}{{/preprocessContent}}
         </div>
       </div>
     </div>

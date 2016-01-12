@@ -19,9 +19,8 @@ Service.add({
 	tagline: { type: String },
 	content: {
 		brief: { type: String, height: 150 },
-		mainContent: { type: Types.Html, wysiwyg: true, height: 400 }
-	},
-	image: { type: Types.CloudinaryImage }
+		mainContent: { type: Types.Html, wysiwyg: true, height: 700 }
+	}
 });
 
 Service.schema.virtual('content.full').get(function() {

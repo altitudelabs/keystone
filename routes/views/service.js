@@ -40,6 +40,7 @@ exports = module.exports = function(req, res) {
       'slug':'grades-8th-11th-left'
     }).exec(function(err, result) {
       locals.grade8.left = result;
+      //locals.grade8.left.content.mainContent = locals.grade8.left.content.mainContent.replace(/<img([\w\W]+?)>/g, "<div class=diagram><img $1></div>")
       next(err);
     });
   });
