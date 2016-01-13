@@ -298,11 +298,15 @@ a {
     min-width: 280px;
   }
 
-
+  span {
+    line-height: 1.1;
+  }
   h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
   }
-
+  h6 {
+    font-weight: normal;
+  }
   h1 {
     margin-top: 25px;
     margin-bottom: 15px;
@@ -320,8 +324,12 @@ a {
     padding-left: 10px;
   }
 */
-  .paragraph, p {
+  .paragraph {
     padding-bottom: 30px;
+  }
+  p {
+    padding-bottom: 30px;
+    margin-bottom: 0;
   }
   .diagram {
     margin-top: 40px;

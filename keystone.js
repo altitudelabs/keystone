@@ -38,7 +38,8 @@ keystone.init({
 	'cookie secret': 'Hn_mdJJTV%L"WiR=BX-ud4N550<01e:t`sT4@$lwP%P^}Fwo+U0"OJo_p}#}>2U-',
 	'wysiwyg cloudinary images':true,
 	'wysiwyg additional buttons': 'fontsizeselect fontselect ',
-	'wysiwyg menubar': true
+	'wysiwyg menubar': true,
+	'wysiwyg importcss': '../../styles/wysiwyg.css'
 
 
 });
