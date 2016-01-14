@@ -19,8 +19,8 @@ var gulp = require('./gulp/index.js')([
   'uglify',
   'minify-css',
 	'watch-production',
-
-   'minify-html',
+  'imagemin',
+  'minify-html',
   // 'resources'
 ]);
 
@@ -31,7 +31,8 @@ gulp.task('build', function() {
     'sass',
     'minify-css',
     'bundle',
-    'uglify'
+    'uglify',
+    'imagemin'
 	);
 });
 
