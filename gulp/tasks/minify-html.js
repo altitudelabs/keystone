@@ -11,7 +11,7 @@ module.exports = function () {
     empty: false
 
   };
-  return gulp.src('./src-templates/**/*.hbs')
+   gulp.src('./src-templates/**/*.hbs')
       .pipe(minifyHTML())
       .pipe(gulp.dest('./templates'));
 };
