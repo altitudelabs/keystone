@@ -1,0 +1,12 @@
+<section class="snapshot-main" data-controller="Snapshot" data-action="initSwitchHero">
+  <div class="overlay"></div>
+  <div class="snapshot-main-text">
+    <h1 class="title">{{{data.title}}}</span>
+    <h2 class="sub">{{{data.tagline}}}</span>
+  </div>
+</section>
+
+
+<section class="text-content">
+{{#preprocessContent data.content.mainContent}}{{/preprocessContent}}
+</section>

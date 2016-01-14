@@ -14,12 +14,13 @@ var gulp = require('./gulp/index.js')([
   'reload',
   'browser-sync',
   'serve',
+  'bundle',
   // 'browserify',
-  // 'uglify',
+  'uglify',
   'minify-css',
-	'watch-production'
+	'watch-production',
 
-  // 'minify-html',
+   'minify-html',
   // 'resources'
 ]);
 
@@ -27,7 +28,10 @@ var gulp = require('./gulp/index.js')([
 gulp.task('build', function() {
 	runSequence(
 		'clean',
-    'sass'
+    'sass',
+    'minify-css',
+    'bundle',
+    'uglify'
 	);
 });
 

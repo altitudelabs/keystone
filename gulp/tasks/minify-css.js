@@ -1,7 +1,7 @@
 'use strict';
 
 // Include gulp
-var gulp = require('gulp'); 
+var gulp = require('gulp');
 
 // Include other plugins
 var minifyCss = require('gulp-minify-css');
@@ -12,6 +12,6 @@ module.exports = function () {
   return gulp.src('./public/styles/main.css')
     .pipe(minifyCss())
     // .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('./dist/styles/'));
-  
+    .pipe(gulp.dest('./public/styles/'));
+
 };

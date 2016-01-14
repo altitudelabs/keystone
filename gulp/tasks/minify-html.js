@@ -1,12 +1,17 @@
 // Include gulp
-var gulp = require('gulp'); 
+var gulp = require('gulp');
 
 // Include other plugins
 var minifyHTML = require('gulp-minify-html');
 
 module.exports = function () {
-  var opts = {spare:true};
-    gulp.src('./client/*.html')
-      .pipe(minifyHTML(opts))
-      .pipe(gulp.dest('./dist'));
+  var opts = {
+    spare:false,
+    comments: false,
+    empty: false
+
+  };
+    gulp.src('./src-templates/**/*.hbs')
+      .pipe(minifyHTML())
+      .pipe(gulp.dest('./templates'));
 };
