@@ -7,8 +7,10 @@ var keystone = require('keystone'),
  */
 
 var Keystory = new keystone.List('Keystory', {
+	sortable: true,
 	map: { name: 'author' },
-	autokey: { path: 'slug', from: 'author', unique: true }
+	autokey: { path: 'slug', from: 'author', unique: true },
+	defaultSort: 'sortOrder'
 });
 
 Keystory.add({

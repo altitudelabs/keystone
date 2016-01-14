@@ -13,7 +13,7 @@ exports = module.exports = function(req, res) {
   };
   view.on('init', function(next) {
 
-		var q = keystone.list('Keystory').model.find();
+		var q = keystone.list('Keystory').model.find().sort('sortOrder');
 		q.exec(function(err, result) {
 			locals.data.posts = result;
 			next(err);
