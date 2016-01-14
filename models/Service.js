@@ -26,5 +26,5 @@ Service.add({
 Service.schema.virtual('content.full').get(function() {
 	return this.content.extended || this.content.brief;
 });
-
+Service.defaultColumns = 'position, title|30%, tagline|30%';
 Service.register();

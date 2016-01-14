@@ -22,5 +22,5 @@ Keystory.schema.virtual('content.full').get(function() {
 	return this.content.extended || this.content.brief;
 });
 
-Keystory.defaultColumns = 'title, state|20%, author|20%, publishedDate|20%';
+Keystory.defaultColumns = 'author, content|60%';
 Keystory.register();
