@@ -4,6 +4,10 @@ module.exports = {
   bundle: {
     main: {
       scripts: [
+        './public/bower_components/bootstrap/dist/js/bootstrap.min.js',
+    		'./public/bower_components/dw-bxslider-4/dist/jquery.bxslider.min.js',
+    		'./public/bower_components/parallax/deploy/parallax.min.js',
+
         './public/js/app/app.js',
         './public/js/app/nav/index.js',
     		'./public/js/app/nav/controller.js',
