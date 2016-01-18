@@ -364,7 +364,9 @@ a {
 
 }
 
-
+.form-invisible {
+  position: absolute; left: -5000px;
+}
 .desktop-only {
   @media (max-width: $mobile-width) {
     display: none;
