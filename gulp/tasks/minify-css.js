@@ -4,7 +4,7 @@
 var gulp = require('gulp');
 
 // Include other plugins
-var minifyCss = require('gulp-minify-css');
+var minifyCss = require('gulp-cssnano');
 // var rename = require('gulp-rename');
 
 module.exports = function () {

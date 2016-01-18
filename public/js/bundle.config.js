@@ -4,6 +4,8 @@ module.exports = {
   bundle: {
     main: {
       scripts: [
+        './public/js/lib/jquery/jquery-1.11.1.min.js',
+        './public/js/lib/bootstrap/bootstrap-3.2.0.min.js',
         './public/bower_components/bootstrap/dist/js/bootstrap.min.js',
     		'./public/bower_components/dw-bxslider-4/dist/jquery.bxslider.min.js',
     		'./public/bower_components/parallax/deploy/parallax.min.js',

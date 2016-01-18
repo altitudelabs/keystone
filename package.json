@@ -20,6 +20,7 @@
     "gulp": "~3.8.10",
     "gulp-bundle-assets": "^2.23.0",
     "gulp-clean": "^0.3.1",
+    "gulp-cssnano": "^2.1.0",
     "gulp-html-minifier": "^0.1.8",
     "gulp-htmlmin": "^1.3.0",
     "gulp-imagemin": "^2.4.0",
