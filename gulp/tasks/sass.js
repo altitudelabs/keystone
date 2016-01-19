@@ -1,6 +1,6 @@
 'use strict';
 // Include gulp
-var gulp = require('gulp'); 
+var gulp = require('gulp');
 // Include Our Plugins
 var sass = require('gulp-sass');
 var refresh     = require('gulp-livereload');
@@ -12,4 +12,3 @@ module.exports = function() {
     .pipe(gulp.dest('public/styles/'))
     .pipe(refresh());
 };
-
