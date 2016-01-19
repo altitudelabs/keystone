@@ -52,7 +52,7 @@ keystone.set('cloudinary config', {
 });
 
 // console.log(keystone.app);
-keystone.app.use(keystone.express.static('public', { maxAge: 0 }));
+keystone.app.use(keystone.express.static('public', { maxAge: 600 }));
 // Port
 keystone.set('port', 8888);
 
