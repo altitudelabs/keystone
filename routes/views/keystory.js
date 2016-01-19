@@ -8,6 +8,10 @@ exports = module.exports = function(req, res) {
   // locals.section is used to set the currently selected
   // item in the header navigation.
   locals.section = 'keystory';
+  locals.meta = {
+    'title': 'Keystory',
+    'description':'Student testimonials describe why we are the most respected, successful, and sought after test prep and education consulting company in the world.'
+  };
   locals.data = {
     posts: []
   };

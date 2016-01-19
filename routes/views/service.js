@@ -11,6 +11,12 @@ exports = module.exports = function(req, res) {
   var category = req.params.category;
 
   locals.section = 'service';
+
+  locals.meta = {
+    'title': 'Service',
+    'description':'Services range from academic enrichment to boost GPA, New SAT, ACT, AP Subject test preparation to college and boarding school application consulting.'
+  };
+
   locals.filters = {
     category: category
   };
@@ -93,6 +99,22 @@ exports = module.exports = function(req, res) {
   if (!category) {
     view.render('service');
   } else {
+    if(category === 'grade5') {
+      locals.meta = {
+        'title': 'Grade 5 - 8',
+        'description':'Keystone Prep\'s Boarding School Application Program is designed to help middle school students create the best US boarding school applications.'
+      };
+    }else if(category === 'grade8') {
+      locals.meta = {
+        'title': 'Grade 8 - 11',
+        'description':'The curricular enrichment programs provide students with private one-on-one and group tutoring services both online and offline to boost GPA.'
+      };
+    }else if(category === 'grade11') {
+      locals.meta = {
+        'title': 'Grade 11 - 12',
+        'description':'Expert teachers help students improve scores on the New SAT, ACT, SAT and AP subject tests, TOEFL, SSAT, ISEE, and IB exams.'
+      };
+    }
     view.render(category);
   }
 };

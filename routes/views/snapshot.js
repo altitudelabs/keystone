@@ -8,6 +8,10 @@ exports = module.exports = function(req, res) {
   // locals.section is used to set the currently selected
   // item in the header navigation.
   locals.section = 'snapshot';
+  locals.meta = {
+    'title': 'Snapshot',
+    'description':'Keystone Prep\'s Snapshot Consulting program is a one-time advisory service that helps students plan for college admissions and standardized test.'
+  };
   view.on('init', function(next) {
 
     var q = keystone.list('Service').model.findOne({
