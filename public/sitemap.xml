@@ -1,74 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-<url>
-  <loc>http://www.keystoneprep.com/</loc>
-  <changefreq>hourly</changefreq>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>http://www.keystoneprep.com/about</loc>
-  <changefreq>hourly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.keystoneprep.com/service</loc>
-  <changefreq>hourly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.keystoneprep.com/programs</loc>
-  <changefreq>hourly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.keystoneprep.com/keystory</loc>
-  <changefreq>hourly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.keystoneprep.com/career</loc>
-  <changefreq>hourly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.keystoneprep.com/contact</loc>
-  <changefreq>hourly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.keystoneprep.com/privacy</loc>
-  <changefreq>hourly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.keystoneprep.com/service/grade5</loc>
-  <changefreq>hourly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.keystoneprep.com/service/grade8</loc>
-  <changefreq>hourly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.keystoneprep.com/service/grade11</loc>
-  <changefreq>hourly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.keystoneprep.com/bootcamp</loc>
-  <changefreq>hourly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.keystoneprep.com/snapshot</loc>
-  <changefreq>hourly</changefreq>
-  <priority>0.64</priority>
-</url>
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://www.keystoneprep.com/</loc>
+    <changefreq>Always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.keystoneprep.com/about</loc>
+    <changefreq>Always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.keystoneprep.com/programs</loc>
+    <changefreq>Always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.keystoneprep.com/keystory</loc>
+    <changefreq>Always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.keystoneprep.com/service</loc>
+    <changefreq>Always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.keystoneprep.com/career</loc>
+    <changefreq>Always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.keystoneprep.com/contact</loc>
+    <changefreq>Always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.keystoneprep.com/privacy</loc>
+    <changefreq>Always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.keystoneprep.com/service/grade5</loc>
+    <changefreq>Always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.keystoneprep.com/service/grade8</loc>
+    <changefreq>Always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.keystoneprep.com/service/grade11</loc>
+    <changefreq>Always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.keystoneprep.com/bootcamp</loc>
+    <changefreq>Always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.keystoneprep.com/snapshot</loc>
+    <changefreq>Always</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>
+<!--<guid value="ab5fc837-7a1e-498f-81da-106099dda346" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->

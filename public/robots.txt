@@ -1,6 +1,4 @@
-Sitemap:  http://www.keystoneprep.com/sitemap.xml
 User-agent: *
-
-Disallow: /privacy
-Disallow: /sitemap
-Disallow: /sitemap.xml
+Allow: /
+Allow: /sitemap.htm
+Sitemap: http://www.keystoneprep.com/sitemap.xml
