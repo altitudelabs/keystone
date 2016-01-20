@@ -1,5 +1,5 @@
 {
-  "name": "keystone",
+  "name": "keystone-prep",
   "version": "0.0.0",
   "private": true,
   "dependencies": {

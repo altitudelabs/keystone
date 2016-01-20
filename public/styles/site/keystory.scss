@@ -29,7 +29,7 @@
     border: 2px white solid;
     cursor: pointer;
 
-    &:hover { 
+    &:hover {
 
     }
     div {
@@ -40,7 +40,7 @@
     }
   }
 
-   
+
 }
 
 .keystory-main-text {
@@ -124,7 +124,7 @@
         display: block;
         font-size: 20px;
         /*color: $main-red;*/
-        
+
       }
       .credit {
         color: $main-red;
@@ -142,7 +142,7 @@
 
 /* ------ keystory2 ------*/
 
-.quote.tag-line { 
+.quote.tag-line {
   height: 300px;
   text-align: center;
   padding: 40px 3% 10px 3% !important;
@@ -150,7 +150,7 @@
     height: 250px;
   }
 
-  h1 {
+  h1, .h1 {
     /*color: $main-red;*/
     font-weight: bold;
     margin-top: 85px;

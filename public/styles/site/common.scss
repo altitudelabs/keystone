@@ -253,7 +253,7 @@ a {
   background-color: white;
   border-radius: 8px;
   border: 0;
-  h1 {
+  h1, .h1 {
     margin-top: 20px;
     color: $main-red;
     font-weight: bold;
@@ -301,18 +301,18 @@ a {
   span {
     line-height: 1.1;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6, .h1, .h2 {
     font-weight: bold;
   }
   h6 {
     font-weight: normal;
   }
-  h1 {
+  h1, .h1 {
     margin-top: 25px;
     margin-bottom: 15px;
   }
 
-  h2 {
+  h2, .h2 {
     margin-top: 40px;
     margin-bottom: 20px;
   }
