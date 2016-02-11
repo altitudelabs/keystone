@@ -25,7 +25,7 @@ keystone.init({
 		layoutsDir: 'templates/views/layouts',
 		partialsDir: 'templates/views/partials',
 		defaultLayout: 'default',
-		helpers: new require('./templates/views/helpers')(),
+		helpers: new require('./src-templates/views/helpers')(),
 		extname: '.hbs'
 	}).engine,
 
@@ -35,19 +35,24 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User',
-	'cookie secret': 'Hn_mdJJTV%L"WiR=BX-ud4N550<01e:t`sT4@$lwP%P^}Fwo+U0"OJo_p}#}>2U-'
+	'cookie secret': 'Hn_mdJJTV%L"WiR=BX-ud4N550<01e:t`sT4@$lwP%P^}Fwo+U0"OJo_p}#}>2U-',
+	'wysiwyg cloudinary images':true,
+	'wysiwyg additional buttons': 'fontsizeselect fontselect ',
+	'wysiwyg menubar': true,
+	'wysiwyg importcss': '../../styles/wysiwyg.css'
+
 
 });
 
 // Cloudinary
 keystone.set('cloudinary config', {
-  'cloud_name': process.env.CLOUDINARY_CLOUDNAME,
-  'api_key': process.env.CLOUDINARY_APIKEY,
-  'api_secret': process.env.CLOUDINARY_APISECRET
+  'cloud_name': process.env.CLOUDINARY_CLOUDNAME || 'dv7vierfl',
+  'api_key': process.env.CLOUDINARY_APIKEY || '953732468911817',
+  'api_secret': process.env.CLOUDINARY_APISECRET || 'LW6kbFzOvH9zLJK2UcAqS7ia_RQ'
 });
 
 // console.log(keystone.app);
-keystone.app.use(keystone.express.static('public', { maxAge: 0 }));
+keystone.app.use(keystone.express.static('public', { maxAge: 600 }));
 // Port
 keystone.set('port', 8888);
 
@@ -113,9 +118,11 @@ keystone.set('email tests', require('./routes/emails'));
 // Configure the navigation bar in Keystone's Admin UI
 
 keystone.set('nav', {
-	'posts': ['posts', 'post-categories'],
-	'enquiries': 'enquiries',
-	'users': 'users'
+	//'posts': ['posts', 'post-categories'],
+	'users': 'users',
+	'services': 'services',
+	'programs':'programs',
+	'keystories':'keystories'
 });
 
 // Start Keystone to connect to your database and initialise the web server

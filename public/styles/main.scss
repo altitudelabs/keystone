@@ -3,6 +3,10 @@
 
 // Bootstrap can be removed entirely by deleting this line.
 
+@import "lib/bootstrap.min";
+//@import "lib/jquery.bxslider";
+@import "lib/animate.min";
+
 @import "bootstrap/bootstrap";
 
 // The easiest way to customise Bootstrap variables while
@@ -20,9 +24,9 @@
 @import "site/common";
 
 // Add your own site style includes here
-@import "site/header";
-@import "site/body";
-@import "site/footer";
+//@import "site/header";
+//@import "site/body";
+//@import "site/footer";
 
 
 // page specific scss. needs to be refactored out
@@ -41,5 +45,3 @@
 @import "site/bootcamp";
 @import "site/snapshot";
 @import "site/summer";
-
-

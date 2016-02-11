@@ -15,4 +15,4 @@ PostCategory.add({
 
 PostCategory.relationship({ ref: 'Post', path: 'categories' });
 
-PostCategory.register();
+//PostCategory.register();

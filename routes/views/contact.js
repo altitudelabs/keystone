@@ -2,20 +2,24 @@ var keystone = require('keystone'),
 	Enquiry = keystone.list('Enquiry');
 
 exports = module.exports = function(req, res) {
-	
+
 	var view = new keystone.View(req, res),
 		locals = res.locals;
-	
+
 	// Set locals
 	locals.section = 'contact';
+	locals.meta = {
+		'title': 'contact',
+		'description':'Please contact us at our Seoul or Hong Kong office to schedule a consultation about standardized test prep and boarding and college applications.'
+	};
 	locals.enquiryTypes = Enquiry.fields.enquiryType.ops;
 	locals.formData = req.body || {};
 	locals.validationErrors = {};
 	locals.enquirySubmitted = false;
-	
+
 	// On POST requests, add the Enquiry item to the database
 	view.on('post', { action: 'contact' }, function(next) {
-		
+
 		var newEnquiry = new Enquiry.model(),
 			updater = newEnquiry.getUpdateHandler(req);
 		console.log(req.body);
@@ -31,12 +35,12 @@ exports = module.exports = function(req, res) {
 			}
 			next();
 		});
-		
+
 	});
 
 	keystone.set('mandrill api key', 'BnSESJ6e5K97htKbjzws9g');
 	keystone.set('mandrill username', 'eugene.maestro.choi@gmail.com');
 
 	view.render('contact');
-	
+
 };
