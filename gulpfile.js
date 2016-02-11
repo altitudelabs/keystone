@@ -32,6 +32,7 @@ gulp.task('build', function() {
     'minify-css',
     'bundle',
     'uglify',
+    'minify-html',
     'imagemin'
 	);
 });
