@@ -46,9 +46,9 @@ keystone.init({
 
 // Cloudinary
 keystone.set('cloudinary config', {
-  'cloud_name': process.env.CLOUDINARY_CLOUDNAME || 'dv7vierfl',
-  'api_key': process.env.CLOUDINARY_APIKEY || '953732468911817',
-  'api_secret': process.env.CLOUDINARY_APISECRET || 'LW6kbFzOvH9zLJK2UcAqS7ia_RQ'
+  'cloud_name': process.env.CLOUDINARY_CLOUDNAME || 'dyidxniie',
+  'api_key': process.env.CLOUDINARY_APIKEY || '733466914632625',
+  'api_secret': process.env.CLOUDINARY_APISECRET || 'QViwDj55sB_PQ1jY7b_CQqrLf1o'
 });
 
 // console.log(keystone.app);

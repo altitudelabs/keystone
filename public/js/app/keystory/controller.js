@@ -130,8 +130,10 @@ App.Keystory.controller = {
       }
 
       $(selector + ' h1').text(texts[count]);
-      $(selector).addClass('fadeInRight');
-      $(selector).removeClass('fadeOutLeft');
+      setTimeout(function() {
+        $(selector).addClass('fadeInRight');
+        $(selector).removeClass('fadeOutLeft');
+      }, 50);
 
       setTimeout(function() {
         $(selector).addClass('fadeOutLeft');
