@@ -10,7 +10,7 @@ var App = {
     if (location.pathname !== '/') {
       $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
     }
-
+    $('.copyright').prepend('© ' + new Date().getFullYear() + ' Keystone Prep');
   },
   isTablet: function() {
     return window.innerWidth < 900;
