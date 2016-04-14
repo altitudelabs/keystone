@@ -38,9 +38,6 @@ exports = module.exports = function(req, res) {
 
 	});
 
-	keystone.set('mandrill api key', 'BnSESJ6e5K97htKbjzws9g');
-	keystone.set('mandrill username', 'eugene.maestro.choi@gmail.com');
-
 	view.render('contact');
 
 };

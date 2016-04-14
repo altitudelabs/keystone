@@ -57,7 +57,7 @@ keystone.app.use(keystone.express.static('public', { maxAge: 600 }));
 keystone.set('port', 8888);
 
 // Mandrill
-keystone.set('mandrill api key', process.env.MANDRILL_APIKEY || 'xxx');
+keystone.set('mandrill api key', process.env.MANDRILL_KEY || 'xxx');
 keystone.set('mandrill username', process.env.MANDRILL_USERNAME || 'xxxxxxx');
 // Load your project's Models
 
