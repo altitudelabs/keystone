@@ -46,9 +46,9 @@ keystone.init({
 
 // Cloudinary
 keystone.set('cloudinary config', {
-  'cloud_name': process.env.CLOUDINARY_CLOUDNAME || 'dyidxniie',
-  'api_key': process.env.CLOUDINARY_APIKEY || '733466914632625',
-  'api_secret': process.env.CLOUDINARY_APISECRET || 'QViwDj55sB_PQ1jY7b_CQqrLf1o'
+  'cloud_name': process.env.CLOUDINARY_CLOUDNAME || 'xxxxxxxxx',
+  'api_key': process.env.CLOUDINARY_APIKEY || 'xxxxxxxx',
+  'api_secret': process.env.CLOUDINARY_APISECRET || 'xxxxxx'
 });
 
 // console.log(keystone.app);
@@ -57,8 +57,8 @@ keystone.app.use(keystone.express.static('public', { maxAge: 600 }));
 keystone.set('port', 8888);
 
 // Mandrill
-keystone.set('mandrill api key', '86xH7_i2NLC5x5sL9hA36w');
-keystone.set('mandrill username', 'altitudedrive@gmail.com');
+keystone.set('mandrill api key', process.env.MANDRILL_APIKEY || 'xxx');
+keystone.set('mandrill username', process.env.MANDRILL_USERNAME || 'xxxxxxx');
 // Load your project's Models
 
 keystone.import('models');
