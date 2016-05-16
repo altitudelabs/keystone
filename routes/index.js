@@ -54,43 +54,34 @@ exports = module.exports = function(app) {
 	app.get('/sitemap', routes.views.sitemap);
 
 
-	var mandrill = require('mandrill-api/mandrill');
-	var mandrill_client = new mandrill.Mandrill(process.env.MANDRILL_KEY || 'not defined!');
-	console.log(mandrill_client);
+	var nodemailer = require('nodemailer');
+	var sesTransport = require('nodemailer-ses-transport');
+	var transporter = nodemailer.createTransport(sesTransport({
+	    accessKeyId: process.env.AWS_ACCESS_KEY,
+	    secretAccessKey: process.env.AWS_SECRET_KEY,
+			region: 'eu-west-1',
+	    rateLimit: 1 // do not send more than 5 messages in a second
+	}));
+
+	console.log(transporter);
+
 	app.post('/contact', function(req, res) {
 
 
 		var message = {};
 		console.log(req.body);
-		message.text = req.body.message;
-		message.from_email = req.body.email;
+		message.html = 'Name: ' + req.body['name.full'] + '<br>Email: ' + req.body.email + '<br>Message : ' + req.body.message;
+		message.from = 'Keystone Robot <keystone@keystoneprep.com>';
 		message.subject = 'New contact from Keystoneprep.com';
-		message.to = [{
-			email: 'andrew.won@keystoneprep.com',
-			name: req.body['name.full'],
-			type: 'to'
-		},
-	 	{
-			email: 'keystone@keystoneprep.com',
-			name: req.body['name.full'],
-			type: 'to'
-		}];
+		message.to = ['keystone@keystoneprep.com','andrew.won@keystoneprep.com'];
 
-		mandrill_client.messages.send({
-			message: message,
-			async: false,
-			ip_pool: 'Main Pool'
-
-		}, function(result) {
-			console.log('result', result);
-			if (result[0].status === 'sent') {
-				console.log('success!!!!');
-				res.sendStatus(304);
-			}
-
-		}, function (e) {
-			console.log('mandril error', e.name, ' - ', e.message);
-			res.sendStatus(400, e);
+		transporter.sendMail(message, function(error, info) {
+			if(error){
+				res.sendStatus(400, error);
+        return console.log(error);
+	    }
+	    console.log('Message sent: ' + info);
+			res.sendStatus(304);
 		});
 	});
 
