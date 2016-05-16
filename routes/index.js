@@ -71,7 +71,7 @@ exports = module.exports = function(app) {
 		var message = {};
 		console.log(req.body);
 		message.html = 'Name: ' + req.body['name.full'] + '<br>Email: ' + req.body.email + '<br>Message : ' + req.body.message;
-		message.from = 'Keystone Robot <keystone@keystoneprep.com>';
+		message.from = 'robot@keystoneprep.com';
 		message.subject = 'New contact from Keystoneprep.com';
 		message.to = ['keystone@keystoneprep.com','andrew.won@keystoneprep.com'];
 
