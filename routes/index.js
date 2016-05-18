@@ -59,7 +59,7 @@ exports = module.exports = function(app) {
 	var transporter = nodemailer.createTransport(sesTransport({
 	    accessKeyId: process.env.AWS_ACCESS_KEY,
 	    secretAccessKey: process.env.AWS_SECRET_KEY,
-			region: 'eu-west-1',
+			region: 'us-east-1',
 	    rateLimit: 1 // do not send more than 5 messages in a second
 	}));
 
@@ -71,7 +71,7 @@ exports = module.exports = function(app) {
 		var message = {};
 		console.log(req.body);
 		message.html = 'Name: ' + req.body['name.full'] + '<br>Email: ' + req.body.email + '<br>Message : ' + req.body.message;
-		message.from = 'robot@keystoneprep.com';
+		message.from = 'keystone@keystoneprep.com';
 		message.subject = 'New contact from Keystoneprep.com';
 		message.to = ['keystone@keystoneprep.com','andrew.won@keystoneprep.com'];
 
